@@ -18,12 +18,26 @@
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+.rotate-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hoverBox:hover .rotate-icon {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 
-  100% {
-    transform: rotate(180deg);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
 }

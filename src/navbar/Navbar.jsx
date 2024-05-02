@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { IoIosArrowDown, IoIosMenu } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp, IoIosMenu } from "react-icons/io";
 import { PiXBold, PiXCircleDuotone } from "react-icons/pi";
 import "./Navbar.css";
 import { BiDownArrow } from "react-icons/bi";
@@ -8,6 +8,8 @@ import { BiDownArrow } from "react-icons/bi";
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
+  const [dropDownValue, setDropDownValue] = useState("");
+  // console.log(dropDownValue);
 
   const checkScreenWidth = () => {
     // setIsMobile(window.innerWidth < 768);
@@ -23,10 +25,32 @@ function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Activities", path: "activities", drowDown: true },
-    { name: "Training", path: "training", drowDown: true },
-    { name: "Media", path: "media", drowDown: true },
-    { name: "Join DC", path: "join", drowDown: false },
+    {
+      name: "Activities",
+      path: "activities",
+      drowDown: true,
+      menu: [
+        { name: "this is harsh", path: "" },
+        { name: "this is harsh2", path: "" },
+        { name: "this is harsh3", path: "" },
+      ],
+    },
+    {
+      name: "Training",
+      path: "training",
+      drowDown: true,
+      menu: [
+        { name: "this is harsh", path: "" },
+        { name: "this is harsh2", path: "" },
+      ],
+    },
+    {
+      name: "Media",
+      path: "media",
+      drowDown: true,
+      menu: [{ name: "this is harsh", path: "" }],
+    },
+    { name: "Join DC", path: "join" },
   ];
 
   return (
@@ -110,18 +134,32 @@ function Navbar() {
               const { path, name } = item;
               return (
                 // add a path here
-                <Link key={index} to="/">
-                  <div className="py-[5px] px-[1rem] text-xl font-semibold cursor-pointer flex items-center hover:text-purple">
+                <div
+                  className=" relative"
+                  key={index}
+                  onMouseEnter={() => setDropDownValue(name)}
+                  onMouseLeave={() => setDropDownValue("")}
+                >
+                  <div className=" hoverBox py-[5px] px-[1rem] text-xl font-semibold cursor-pointer flex items-center hover:text-purple ">
                     {name}
                     {item.drowDown && (
-                      <div
-                        className=" translate-y-[2px] pl-1 hover:animate-arrowRotate"
-                      >
-                        <IoIosArrowDown />
+                      <div className=" translate-y-[2px] pl-1">
+                        <IoIosArrowDown className="rotate-icon" />
                       </div>
                     )}
                   </div>
-                </Link>
+                  {item.drowDown && dropDownValue === name && (
+                    <div className=" absolute min-w-36 bg-[#fff] z-30 top-full left-0 py-2 rounded-lg shadow-lg fade-in ">
+                      {item.menu?.map((subItem, subIndex) => (
+                        <Link to={subItem.path} key={subIndex}>
+                          <div className=" mx-2 p-2 rounded-md hover:bg-[#f5f5f5] text-lg font-semibold text-center">
+                            {subItem.name}
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
