@@ -52,14 +52,13 @@ function Navbar() {
       drowDown: true,
       menu: [{ name: "this is harsh", path: "" }],
     },
-    { name: "Join DC", path: "join" },
   ];
 
   return (
     <>
       {isMobile ? (
         // Mobile View
-        <nav className=" bg-white flex justify-between items-center px-[1rem] py-3 w-full z-20 fixed top-0 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
+        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-3 w-full z-20 fixed top-0 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
           {/* Logo */}
           <div className=" text-[2rem]">
             <img
@@ -71,8 +70,8 @@ function Navbar() {
           </div>
           {/* Book a Demo Button */}
           <div className=" flex gap-4 items-center ">
-            <div className=" border-[1px] px-2 sm:px-[2rem] py-[0.5rem] rounded-full font-semibold text-center text-sm  sm:text-lg cursor-pointer">
-              <div className=" py-1">Book a Demo</div>
+            <div className=" border-[1px] px-4 sm:px-[2rem] py-[0.5rem] rounded-full font-semibold text-center text-sm  sm:text-lg cursor-pointer">
+              <div className=" py-1">Join Dc</div>
             </div>
             <IoIosMenu size={35} onClick={() => setOpen(!open)} />
           </div>
@@ -126,7 +125,7 @@ function Navbar() {
         </nav>
       ) : (
         // Desktop view
-        <nav className=" bg-white flex justify-between items-center px-[1rem] py-[1rem] w-full z-20 fixed top-0 md:px-[rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
+        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-[1rem] w-full z-20 fixed top-0 md:px-[rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
           {/* LOGO */}
           <div className=" text-[2rem]">
             <img
@@ -177,7 +176,7 @@ function Navbar() {
           {/* buttons for desktop view */}
           <div className=" hidden md:flex md:gap-5">
             <div className=" border-[1px] px-[1rem] py-[0.5rem] rounded-full font-semibold text-sm text-center cursor-pointer lg:px-[2rem] lg:text-lg">
-              <div className=" py-1">Book a Demo</div>
+              <div className=" py-1">Join Dc</div>
             </div>
             <div className=" border-[1px] px-[2rem] rounded-full font-semibold text-lg bg-blue flex items-center gap-3 cursor-pointer">
               <img
