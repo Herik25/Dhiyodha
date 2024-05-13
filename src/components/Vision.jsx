@@ -293,7 +293,7 @@ const Vision = () => {
   }, []);
 
   return (
-    <section className="diyodha-vision-area">
+    <section className="diyodha-vision-area z-20">
       <div className="container mx-auto px-4">
         <div className="flex md:flex-row items-center justify-center">
           <div className="col-span-12 text-center">
