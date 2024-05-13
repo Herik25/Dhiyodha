@@ -4,28 +4,6 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <div className="flex flex-col">
-      <div className=" bg-[#eee] px-40 pt-20 pb-10 flex items-center justify-between">
-        <img
-          className=" h-16 opacity-20"
-          src="https://preview.fontget.com/tmp/663b35f0f0579.png"
-          alt="facebook"
-        />
-        <img
-          className=" h-16 opacity-20"
-          src="https://static.fontbolt.com/preview/64117a7e7fef3.png"
-          alt="twitter"
-        />
-        <img
-          className=" h-16 opacity-20"
-          src="https://static.fontbolt.com/preview/6411e82f49c1a.png"
-          alt="instagram"
-        />
-        <img
-          className=" h-16 opacity-20"
-          src="https://static.fontbolt.com/preview/6410dc85f0e33.png"
-          alt="github"
-        />
-      </div>
       <div className=" pt-10 px-40 pb-20 flex justify-between items-center">
         <div className=" flex flex-col items-center justify-center gap-5">
           <div className=" ">

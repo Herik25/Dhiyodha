@@ -8,18 +8,24 @@ import WhyDhiyodhha from "./components/WhyDhiyodhha";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import CurveyLine from "./components/CurveyLine";
+import AboutUs from "./components/AboutUs";
+import IgFeed from "./components/IgFeed";
 
 function App() {
-  return <div>
-    <Navbar />
+  return (
+    <div>
+      <Navbar />
       <Hero />
       <Test />
       <CurveyLine />
       <Vision />
+      <AboutUs />
       <WhyDhiyodhha />
       <Testimonials />
+      <IgFeed />
       <Footer />
-  </div>
+    </div>
+  );
 }
 
 export default App;

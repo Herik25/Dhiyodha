@@ -50,7 +50,7 @@ function Navbar() {
       name: "Media",
       path: "media",
       drowDown: true,
-      menu: [{ name: "this is harsh", path: "" }],
+      menu: [{ name: "DC Meetings", path: "" },{ name: "Dhiyodha", path: "" },],
     },
   ];
 

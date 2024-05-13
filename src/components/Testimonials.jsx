@@ -9,22 +9,22 @@ function Testimonials() {
     <div className=" flex justify-between overflow-hidden">
       <div className=" relative my-10 px-2 flex-1 ">
         <div style={{ animation: "slide-animation ease-in-out 2s infinite"}} className=" absolute top-0 left-0 w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://alicrie.vercel.app/images/anime+pfp+luffy-8.jpg" alt="pic1" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://1.bp.blogspot.com/-etLuQuGcvk4/X7KNwaY_jNI/AAAAAAAACQk/5IakDtRRKVo5vNbZLfhSsk10RTVdHmsjQCLcBGAsYHQ/w320-h309/indira%2Bgandhi%2Btransparent%2Bpng%2B11.png" alt="pic1" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 3s infinite"}} className=" absolute top-[20%] right-[20%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i0.wp.com/wallpaperaccess.com/full/5389873.jpg" alt="pic2" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://th.bing.com/th/id/OIP.yecByzFzfjR4auLzZtBySwHaFz?rs=1&pid=ImgDetMain" alt="pic2" />
         </div> 
         <div style={{ animation: "slide-animation ease-in-out 4s infinite"}} className=" absolute top-[40%] left-[40%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://th.bing.com/th/id/R.fe32edad699edbe82b7cc88ccd9573fa?rik=Way6AG5N1Flizg&riu=http%3a%2f%2fpm1.narvii.com%2f7824%2fcad96d095bdd5db282f5a580d2520e950758cddcr1-675-675v2_uhq.jpg&ehk=28yX%2bcYFBzma366A14dzETx7Q3RlZ7BNmGwIFRroM7I%3d&risl=&pid=ImgRaw&r=0" alt="pic3" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.lifology.com/wp-content/themes/lifology/assets/gcd/images/panel/Barkha.png?ver=1.5.2" alt="pic3" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 5s infinite"}} className=" absolute top-[60%] left-[12%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i.pinimg.com/736x/74/c5/cb/74c5cbf5f2984f4787b58771ae451a58.jpg" alt="pic4" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://uploads-ssl.webflow.com/638aec50b9a23cec17b8c4d1/63c8efc8cbe2f68f8fec48ff_1588582389829-removebg-preview.png" alt="pic4" />
         </div>
-        <div style={{ animation: "slide-animation ease-in-out 6s infinite"}} className=" absolute bottom-0 right-0 w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i.pinimg.com/originals/5b/ec/67/5bec673521ec13e082c4805f6e96a479.png" alt="pic4" />
+        <div style={{ animation: "slide-animation eas border-[1px] border-[#ccc]e-in-out 6s infinite"}} className=" absolute bottom-0 right-0 w-[80px]">
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.iconspng.com/uploads/priyanka-chopra-portrait.png" alt="pic4" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 7s infinite"}} className=" absolute w-[80px] right-[40%] bottom-[15%]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://wallpapercave.com/wp/wp8801869.jpg" alt="pic4" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.csaspeakersindia.in/media/pictures/profile/6402.png" alt="pic4" />
         </div>
       </div>
       <div className=" flex my-44 justify-center z-10">
@@ -60,22 +60,22 @@ function Testimonials() {
       </div>
       <div className=" relative my-10 px-2 flex-1 ">
         <div style={{ animation: "slide-animation ease-in-out 6s infinite"}} className=" absolute top-0 right-[10%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://alicrie.vercel.app/images/anime+pfp+luffy-8.jpg" alt="pic1" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://dinazfitness.com/wp-content/uploads/2019/12/2_03_36_07_Saina-Nehwal_1_H@@IGHT_450_W@@IDTH_450-300x300.png" alt="pic1" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 5s infinite"}} className=" absolute top-[20%] left-[20%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i0.wp.com/wallpaperaccess.com/full/5389873.jpg" alt="pic2" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.indyturk.com/sites/default/files/arundhati_2-removebg-preview.png" alt="pic2" />
         </div> 
         <div style={{ animation: "slide-animation ease-in-out 4s infinite"}} className=" absolute top-[40%] right-[40%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://th.bing.com/th/id/R.fe32edad699edbe82b7cc88ccd9573fa?rik=Way6AG5N1Flizg&riu=http%3a%2f%2fpm1.narvii.com%2f7824%2fcad96d095bdd5db282f5a580d2520e950758cddcr1-675-675v2_uhq.jpg&ehk=28yX%2bcYFBzma366A14dzETx7Q3RlZ7BNmGwIFRroM7I%3d&risl=&pid=ImgRaw&r=0" alt="pic3" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://cdn.ticketsource.co.uk/images/promoter/banner/81797-16726832912241-s.png" alt="pic3" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 3s infinite"}} className=" absolute top-[60%] right-[12%] w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i.pinimg.com/736x/74/c5/cb/74c5cbf5f2984f4787b58771ae451a58.jpg" alt="pic4" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.bhmpics.com/downloads/mithali-raj-Wallpapers/6.99363.png" alt="pic4" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 2s infinite"}} className=" absolute bottom-0 left-0 w-[80px]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://i.pinimg.com/originals/5b/ec/67/5bec673521ec13e082c4805f6e96a479.png" alt="pic4" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://www.w3summit.io/images/speakers/vineetas.png" alt="pic4" />
         </div>
         <div style={{ animation: "slide-animation ease-in-out 6s infinite"}} className=" absolute w-[80px] left-[40%] bottom-[15%]">
-          <img className=" h-28 min-w-28 rounded-full" src="https://wallpapercave.com/wp/wp8801869.jpg" alt="pic4" />
+          <img className=" h-28 min-w-28 rounded-full border-[1px] border-[#ccc]" src="https://images.squarespace-cdn.com/content/v1/5b553895697a98cf2cef2bc6/1553632726498-ILOPDRFRHE1DBFABI4IO/indra.png" alt="pic4" />
         </div>
       </div>
     </div>

@@ -1,0 +1,1230 @@
+/* //////////////////// diyodha-vision-area  //////////////////////////// */
+.diyodha-vision-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    background-color: #113290;   
+}
+
+.vision-main-block {
+    padding: 70px 0px;
+}
+
+.vision-child-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 190px; */
+    position: relative;
+    margin-top: 60px;
+}
+
+.tailer__block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-tailer__block {
+    display: block;
+    position: relative;
+    margin-top: 90px;
+}
+
+.home-tailer__block #textanimie {
+    height: 350px;
+    width: 310px;
+
+}
+
+.home-arrow__nav-block {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.nav__image-block {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #113290;
+    top: -15px;
+    left: 0;
+    z-index: 4 !important;
+    transition: all .3s ease-in-out
+}
+
+.nav__image-block.logistics-hospitality {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 22%;
+    top: 0%;
+}
+
+.nav__image-block.socialmedia-entertainment {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 33%;
+    top: 3%
+}
+
+.nav__image-block.technology {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 37%;
+    top: 12%
+}
+
+.nav__image-block.cryptocurrency {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 38.4%;
+    top: 22%
+}
+
+.nav__image-block.healthcare {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 39%;
+    top: 39%
+}
+
+.nav__image-block.telecom {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 36%;
+    top: 55%
+}
+
+.nav__image-block.fintech {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 33%;
+    top: 63%
+}
+
+.nav__image-block.education {
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    left: 22%;
+    top: 65%
+}
+
+.nav__image-block .slick-list {
+    width: 100% !important;
+    height: auto !important
+}
+
+.nav__image-block .home-arrow__nav-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav__image-block img {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.home-arrow__nav-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.nav_item_click {
+
+    border-radius: 20px;
+    /* border: 1px solid white; */
+    padding: 5px 15px;
+    color: #fff;
+    background: #223f93;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+
+    margin-right: 280px;
+    margin-top: -45px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(1) .nav__image-block {
+    right: 250px
+}
+
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+    margin-right: 130px;
+    margin-top: -60px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(2) .nav__image-block {
+    right: -250px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+    margin-right: 20px;
+    margin-top: -10px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(3) .nav__image-block {
+    right: -285px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+    margin-right: -70px;
+    margin-top: 20px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(4) .nav__image-block {
+    right: -260px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+    margin-right: -50px;
+    margin-top: 20px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(5) .nav__image-block {
+    right: -285px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+    margin-right: 0px;
+    margin-top: 30px;
+
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(6) .nav__image-block {
+    right: -330px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+    margin-right: 150px;
+    margin-top: -10px;
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(7) .nav__image-block {
+    top: -85px;
+    right: -315px
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+    margin-right: 280px;
+    margin-top: -60px;
+}
+
+.home-arrow__nav-list .home-arrow__nav-item:nth-child(8) .nav__image-block {
+    top: -180px;
+    right: -270px
+}
+
+.home-arrow__nav-item {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 33px 0;
+    height: 35px;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+.home-arrow__nav-item.active {
+    transition: all .3s ease-in-out;
+
+
+
+}
+
+.home-arrow__nav-item.active .nav__image-block {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.home-arrow__nav-item.active .nav_item_click {
+    background-image: linear-gradient(to right, #0c52e5, #099cd3, #38bf9b);
+    border: 0;
+}
+
+.home-arrow__nav-item.active .home-arrow__nav-text {
+    font-size: 22px !important;
+    transition: all .3s ease-in-out;
+    transform: translateX(10px);
+}
+
+.nav_image-block--border {
+    width: initial;
+    height: initial;
+    border: 6px solid rgba(0, 0, 0, .25);
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    bottom: -3px;
+    border-radius: 50%;
+    right: -1px;
+    margin: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.home-arrow__nav-text {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 2px 10px 2px;
+    background: linear-gradient(#0c52e5, #099cd3, #38bf9b);
+    position: relative;
+    line-height: .8;
+    transition: all .3s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none
+}
+
+.tailer-section-work-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.section-title__descripion {
+    padding: 10px 0 20px;
+    font-size: 18px;
+    color: #fff !important;
+}
+
+
+.sub-title__block .section-title__text {
+    /* width: inherit; */
+    font-size: 35px;
+    line-height: 50px;
+    word-spacing: -4px;
+    background: -webkit-linear-gradient(#0c52e5, #099cd3, #38bf9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#textanimie path:nth-child(1) {
+    stroke-dasharray: 3160 !important;
+
+    animation: draw 8s linear infinite;
+    /* stroke-dashoffset: 0; */
+}
+
+#textanimie path:nth-child(2) {
+    stroke-dasharray: 442 !important;
+
+    animation: draw2 8s linear infinite;
+    /* stroke-dashoffset: 0; */
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 3160;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw2 {
+    0% {
+        stroke-dashoffset: 442;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1400px) {
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 240px;
+        margin-top: -60px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: 110px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -20px;
+        margin-top: 30px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -70px;
+        margin-top: 20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -90px;
+        margin-top: 20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -10px;
+        margin-top: 0px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: 100px;
+        margin-top: -60px;
+        margin-bottom: 25px
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 230px;
+        margin-top: -45px;
+
+    }
+
+    .nav__image-block.logistics-hospitality {
+
+        left: 20%;
+        top: 0%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+
+        left: 31%;
+        top: 2%
+    }
+
+    .nav__image-block.technology {
+
+        left: 36%;
+        top: 10%
+    }
+
+    .nav__image-block.cryptocurrency {
+
+        left: 38.4%;
+        top: 22%
+    }
+
+    .nav__image-block.healthcare {
+
+        left: 39%;
+        top: 39%
+    }
+
+    .nav__image-block.telecom {
+
+        left: 36%;
+        top: 55%
+    }
+
+    .nav__image-block.fintech {
+
+        left: 32%;
+        top: 63%
+    }
+
+    .nav__image-block.education {
+
+        left: 20%;
+        top: 65%
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 180px;
+        margin-top: -55px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: 50px;
+        margin-top: 0px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -70px;
+        margin-top: 20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -100px;
+        margin-top: 20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -120px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -43px;
+        margin-top: 5px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: 40px;
+        margin-top: -60px;
+        margin-bottom: 25px
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 180px;
+        margin-top: -45px;
+
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 20%;
+        top: 0%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 31%;
+        top: 2%
+    }
+
+    .nav__image-block.technology {
+        left: 37%;
+        top: 10%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 39.5%;
+        top: 22%
+    }
+
+    .nav__image-block.healthcare {
+        left: 40%;
+        top: 39%
+    }
+
+    .nav__image-block.telecom {
+        left: 37%;
+        top: 55%
+    }
+
+    .nav__image-block.fintech {
+        left: 34%;
+        top: 62%
+    }
+
+    .nav__image-block.education {
+        left: 20%;
+        top: 65%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .home-arrow__nav-list {
+        width: 81%;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 30%;
+        top: 0%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 46%;
+        top: 1%
+    }
+
+    .nav__image-block.technology {
+        left: 55%;
+        top: 9%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 59%;
+        top: 22%
+    }
+
+    .nav__image-block.healthcare {
+        left: 61%;
+        top: 40%
+    }
+
+    .nav__image-block.telecom {
+        left: 54%;
+        top: 59%
+    }
+
+    .nav__image-block.fintech {
+        left: 50%;
+        top: 62%
+    }
+
+    .nav__image-block.education {
+        left: 30%;
+        top: 65%
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .home-arrow__nav-list {
+        width: 100%;
+    }
+
+    .home-tailer__block #textanimie {
+        height: 310px;
+        width: 270px;
+
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        font-size: 19px;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 30%;
+        top: 0%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 46%;
+        top: 1%
+    }
+
+    .nav__image-block.technology {
+        left: 55%;
+        top: 9%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 61%;
+        top: 22%
+    }
+
+    .nav__image-block.healthcare {
+        left: 61%;
+        top: 40%
+    }
+
+    .nav__image-block.telecom {
+        left: 56%;
+        top: 52%
+    }
+
+    .nav__image-block.fintech {
+        left: 50%;
+        top: 57%
+    }
+
+    .nav__image-block.education {
+        left: 30%;
+        top: 62%
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 280px;
+        margin-top: -55px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: 150px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -10px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: 60px;
+        margin-top: -10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: 150px;
+        margin-top: -60px;
+
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 280px;
+        margin-top: -45px;
+
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width:576px) {
+    .home-arrow__nav-list {
+        width: 250px;
+    }
+
+    .tailer__block {
+        justify-content: start !important;
+        margin-left: 40px;
+    }
+
+    .nav_item_click {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+
+    .home-arrow__nav-text {
+        padding: 6px 1px 6px 1px;
+    }
+
+    .home-tailer__block #textanimie {
+        height: 310px;
+        width: 270px;
+
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        padding: 3px 1px 6px 1px;
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        background-image: linear-gradient(to right, #0c52e5, #099cd3, #38bf9b);
+        border: 0;
+
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        font-size: 16px;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 12%;
+        top: 0%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 32%;
+        top: 1%
+    }
+
+    .nav__image-block.technology {
+        left: 44%;
+        top: 9%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 50%;
+        top: 22%
+    }
+
+    .nav__image-block.healthcare {
+        left: 51%;
+        top: 40%
+    }
+
+    .nav__image-block.telecom {
+        left: 45%;
+        top: 54%
+    }
+
+    .nav__image-block.fintech {
+        left: 38%;
+        top: 60%
+    }
+
+    .nav__image-block.education {
+        left: 12%;
+        top: 63%
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 100px;
+        margin-top: -60px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: -10px;
+        margin-top: -20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -110px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -150px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -170px;
+        margin-top: 10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -100px;
+        margin-top: -10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: -10px;
+        margin-top: -60px;
+
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 100px;
+        margin-top: -45px;
+
+    }
+
+}
+
+@media only screen and (min-width:390px) and (max-width:480px) {
+
+    .home-arrow__nav-list {
+        width: 200px;
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        transform: translateX(0px);
+    }
+
+    .tailer__block {
+        justify-content: start !important;
+        /* margin-left: 20px; */
+    }
+
+    .nav_item_click {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+
+    .home-arrow__nav-text {
+        padding: 6px 1px 6px 1px;
+    }
+
+    .home-tailer__block #textanimie {
+        height: 360px !important;
+        width: 220px !important;
+        margin-left: 20px;
+
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        padding: 3px 1px 6px 1px;
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        background-image: linear-gradient(to right, #0c52e5, #099cd3, #38bf9b);
+        border: 0;
+
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        font-size: 16px;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 10%;
+        top: 13%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 32%;
+        top: 17%
+    }
+
+    .nav__image-block.technology {
+        left: 38%;
+        top: 22%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 42%;
+        top: 28%
+    }
+
+    .nav__image-block.healthcare {
+        left: 42%;
+        top: 45%
+    }
+
+    .nav__image-block.telecom {
+        left: 38%;
+        top: 55%
+    }
+
+    .nav__image-block.fintech {
+        left: 34%;
+        top: 59%
+    }
+
+    .nav__image-block.education {
+        left: 10%;
+        top: 62%
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 60px;
+        margin-top: -60px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: -40px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -110px;
+        margin-top: 0px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -140px;
+        margin-top: 0px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -160px;
+        margin-top: -5px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -90px;
+        margin-top: -20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: -40px;
+        margin-top: -60px;
+
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 60px;
+        margin-top: 0px;
+
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:390px) {
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        transform: translateX(0px);
+    }
+
+    .home-arrow__nav-list {
+        width: 150px;
+
+
+    }
+
+    .tailer__block {
+        justify-content: start !important;
+
+    }
+
+    .nav_item_click {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+
+    .home-arrow__nav-text {
+        padding: 6px 1px 6px 1px;
+    }
+
+    .home-tailer__block #textanimie {
+        height: 340px !important;
+        width: 200px !important;
+        margin-left: 20px;
+
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        padding: 3px 1px 6px 1px;
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        background-image: linear-gradient(to right, #0c52e5, #099cd3, #38bf9b);
+        border: 0;
+
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        font-size: 16px;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 8%;
+        top: 13%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 26%;
+        top: 15%
+    }
+
+    .nav__image-block.technology {
+        left: 35%;
+        top: 20%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 40%;
+        top: 28%
+    }
+
+    .nav__image-block.healthcare {
+        left: 42%;
+        top: 42%
+    }
+
+    .nav__image-block.telecom {
+        left: 36%;
+        top: 55%
+    }
+
+    .nav__image-block.fintech {
+        left: 32%;
+        top: 57%
+    }
+
+    .nav__image-block.education {
+        left: 8%;
+        top: 60%
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 40px;
+        margin-top: -50px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: -60px;
+        margin-top: -20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -140px;
+        margin-top: -10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -165px;
+        margin-top: -10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -180px;
+        margin-top: -10px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -120px;
+        margin-top: -20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: -60px;
+        margin-top: -60px;
+
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 40px;
+        margin-top: 0px;
+
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:350px) {
+    .home-arrow__nav-list {
+        width: 150px;
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        transform: translateX(0px);
+    }
+
+    .tailer__block {
+        justify-content: start !important;
+
+    }
+
+    .nav_item_click {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+
+    .home-arrow__nav-text {
+        padding: 6px 1px 6px 1px;
+    }
+
+    .home-tailer__block #textanimie {
+        height: 320px !important;
+        width: 180px !important;
+        margin-left: 20px;
+
+    }
+
+    .home-arrow__nav-item.active .home-arrow__nav-text {
+        padding: 3px 1px 6px 1px;
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        background-image: linear-gradient(to right, #0c52e5, #099cd3, #38bf9b);
+        border: 0;
+
+    }
+
+    .home-arrow__nav-item.active .nav_item_click {
+        font-size: 16px;
+    }
+
+    .section-title__block {
+        margin-top: 60px;
+    }
+
+    .nav__image-block.logistics-hospitality {
+        left: 8%;
+        top: 15%;
+    }
+
+    .nav__image-block.socialmedia-entertainment {
+        left: 30%;
+        top: 17%
+    }
+
+    .nav__image-block.technology {
+        left: 36%;
+        top: 20%
+    }
+
+    .nav__image-block.cryptocurrency {
+        left: 40%;
+        top: 25%
+    }
+
+    .nav__image-block.healthcare {
+        left: 40%;
+        top: 40%
+    }
+
+    .nav__image-block.telecom {
+        left: 35%;
+        top: 50%
+    }
+
+    .nav__image-block.fintech {
+        left: 30%;
+        top: 55%
+    }
+
+    .nav__image-block.education {
+        left: 8%;
+        top: 58%
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(8) {
+        margin-right: 40px;
+        margin-top: -50px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(7) {
+        margin-right: -50px;
+        margin-top: -20px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(6) {
+        margin-right: -120px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(5) {
+        margin-right: -140px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(4) {
+        margin-right: -160px;
+        margin-top: -15px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(3) {
+        margin-right: -110px;
+        margin-top: -25px;
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(2) {
+        margin-right: -60px;
+        margin-top: -60px;
+
+    }
+
+    .home-arrow__nav-list .home-arrow__nav-item:nth-child(1) {
+        margin-right: 40px;
+        margin-top: 0px;
+
+    }
+}

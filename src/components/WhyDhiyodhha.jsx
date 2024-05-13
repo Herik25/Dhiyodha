@@ -24,18 +24,21 @@ function WhyDhiyodhha() {
   }, []);
   return (
     <div className=" ScrollContainer overflow-hidden relative">
-      <div className=" text-center bg-[#fff] py-10 text-[#000] text-2xl">
-        Dhiyoudha is here for you
-      </div>
+      <div className=" p-10"></div> 
       <div className=" bg-purple text-center text-4xl font-semibold text-[#fff] pt-10">
-        Hello Harsh
+        Why Dhiyodha
       </div>
       <div className=" flex items-center w-[300vw] bg-purple">
         <section className=" w-[60vw] flex justify-center items-center m-20">
           <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">Private Groups and Chanels</div>
-              <div className=" text-[22px] font-semibold">Created a Trusted Space With Paid Private Groups And Chanels To Frhter Enhance Yoour Engagement</div>
+              <div className="text-[32px] font-bold max-w-[60%]">
+                Private Groups and Chanels
+              </div>
+              <div className=" text-[22px] font-semibold">
+                Created a Trusted Space With Paid Private Groups And Chanels To
+                Frhter Enhance Yoour Engagement
+              </div>
             </div>
             <div>Images</div>
           </div>
@@ -43,8 +46,13 @@ function WhyDhiyodhha() {
         <section className=" w-[60vw] flex justify-center items-center m-20">
           <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">Private Groups and Chanels</div>
-              <div className=" text-[22px] font-semibold">Created a Trusted Space With Paid Private Groups And Chanels To Frhter Enhance Yoour Engagement</div>
+              <div className="text-[32px] font-bold max-w-[60%]">
+                Private Groups and Chanels
+              </div>
+              <div className=" text-[22px] font-semibold">
+                Created a Trusted Space With Paid Private Groups And Chanels To
+                Frhter Enhance Yoour Engagement
+              </div>
             </div>
             <div>Images</div>
           </div>
@@ -52,8 +60,13 @@ function WhyDhiyodhha() {
         <section className=" w-[60vw] flex justify-center items-center m-20">
           <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">Private Groups and Chanels</div>
-              <div className=" text-[22px] font-semibold">Created a Trusted Space With Paid Private Groups And Chanels To Frhter Enhance Yoour Engagement</div>
+              <div className="text-[32px] font-bold max-w-[60%]">
+                Private Groups and Chanels
+              </div>
+              <div className=" text-[22px] font-semibold">
+                Created a Trusted Space With Paid Private Groups And Chanels To
+                Frhter Enhance Yoour Engagement
+              </div>
             </div>
             <div>Images</div>
           </div>
