@@ -19,11 +19,11 @@ function App() {
       <Test />
       <CurveyLine />
       <Vision />
-      <AboutUs />
+      {/* <AboutUs />
       <WhyDhiyodhha />
       <Testimonials />
       <IgFeed />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

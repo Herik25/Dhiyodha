@@ -5,26 +5,12 @@ import { PiXBold, PiXCircleDuotone } from "react-icons/pi";
 import "./Navbar.css";
 import { BiDownArrow } from "react-icons/bi";
 import LogoWithText from "../assets/DhiyodhaLogoWithText.png"
+import useIsMobile from "../hooks/UseIsMobile";
 
 function Navbar() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile()
   const [open, setOpen] = useState(false);
   const [dropDownValue, setDropDownValue] = useState("");
-
-  // Function to check screen width for mobile
-  const checkScreenWidth = () => {
-    // setIsMobile(window.innerWidth < 768);
-    setIsMobile(window.innerWidth < 868);
-  };
-
-  // useEffect hook to check screen width
-  useEffect(() => {
-    checkScreenWidth();
-    window.addEventListener("resize", checkScreenWidth);
-    return () => {
-      window.removeEventListener("resize", checkScreenWidth);
-    };
-  }, []);
 
   // Navbar links data
   const navLinks = [
