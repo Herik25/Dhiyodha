@@ -71,7 +71,7 @@ function Hero() {
             Boost your community and enhance your growth, all while you can earn
             some more!
           </p>
-          <div className=" py-[1rem] rounded-full font-semibold text-xl bg-blue flex items-center justify-center gap-3 cursor-pointer max-w-[350px]">
+          <div className=" py-[1rem] rounded-full font-semibold text-xl bg-purple flex items-center justify-center gap-3 cursor-pointer max-w-[350px]">
             <img
               src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
               height={24}

@@ -24,7 +24,7 @@ function AboutUs() {
           multi-purpose communication platform for equitable family engagement
           throughout all schools.
         </p>
-        <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-blue flex items-center gap-3 cursor-pointer">
+        <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-purple flex items-center gap-3 cursor-pointer">
           <img
             src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
             height={24}

@@ -7,8 +7,8 @@ export default {
     },
     extend: {},
     colors: {
-      blue: "#4316A0",
-      purple: "#4F2485",
+      blue: "#4bc7ef",
+      purple: "#484f9d",
       green: "#9DD88D",
       yellow: "#ECE071"
     },

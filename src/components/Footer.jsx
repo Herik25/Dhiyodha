@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import LogoWithText from "../assets/DhiyodhaLogoWithText.png"
 
 function Footer() {
   return (
@@ -8,9 +9,8 @@ function Footer() {
         <div className=" flex flex-col items-center justify-center gap-5">
           <div className=" ">
             <img
-              height={100}
-              width={150}
-              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/logo.svg"
+              width={180}
+              src={LogoWithText}
               alt="Logo"
             />
           </div>
@@ -42,7 +42,7 @@ function Footer() {
         </div>
         <div className=" flex flex-col gap-5">
           <div className=" text-center text-2xl font-poppins font-semibold">Join Dhiyodha!</div>
-          <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-blue flex items-center gap-3 cursor-pointer">
+          <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-purple flex items-center gap-3 cursor-pointer">
             <img
               src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
               height={24}

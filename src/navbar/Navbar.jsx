@@ -4,6 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp, IoIosMenu } from "react-icons/io";
 import { PiXBold, PiXCircleDuotone } from "react-icons/pi";
 import "./Navbar.css";
 import { BiDownArrow } from "react-icons/bi";
+import LogoWithText from "../assets/DhiyodhaLogoWithText.png"
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,7 +65,7 @@ function Navbar() {
             <img
               height={30}
               width={100}
-              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/logo.svg"
+              src={LogoWithText}
               alt="Logo"
             />
           </div>
@@ -129,10 +130,9 @@ function Navbar() {
           {/* LOGO */}
           <div className=" text-[2rem]">
             <img
-              // className={` h-20 w-25 md:h-30 md:w-30`}
-              height={30}
-              width={100}
-              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/logo.svg"
+              className={` h-12 w-25 md:h-30 md:w-30`}
+              width={180}
+              src={LogoWithText}
               alt="Logo"
             />
           </div>
@@ -178,7 +178,7 @@ function Navbar() {
             <div className=" border-[1px] px-[1rem] py-[0.5rem] rounded-full font-semibold text-sm text-center cursor-pointer lg:px-[2rem] lg:text-lg">
               <div className=" py-1">Join Dc</div>
             </div>
-            <div className=" border-[1px] px-[2rem] rounded-full font-semibold text-lg bg-blue flex items-center gap-3 cursor-pointer">
+            <div className=" border-[1px] px-[2rem] rounded-full font-semibold text-lg bg-purple flex items-center gap-3 cursor-pointer">
               <img
                 src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
                 height={24}
