@@ -9,3 +9,13 @@
         stroke-dashoffset: 0;
     }
   }
+.crt-widget.crt-widget-branded .crt-logo {
+    display: none !important;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: .9em;
+    z-index: 999;
+    color: #090909;
+    text-decoration: none;
+}
