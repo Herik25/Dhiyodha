@@ -9,7 +9,7 @@ function Testimonials() {
   const isMobile = useIsMobile();
 
   return isMobile ? (
-    <div className=" flex flex-col justify-between overflow-hidden mt-[-200px]">
+    <div className=" flex flex-col justify-between overflow-hidden">
       <div className=" flex justify-between relative px-2 flex-1 ">
         <div
           style={{ animation: "slide-animation ease-in-out 4s infinite" }}
