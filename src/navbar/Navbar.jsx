@@ -45,7 +45,7 @@ function Navbar() {
     <>
       {isMobile ? (
         // Mobile View
-        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-3 w-full z-20 fixed top-0 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
+        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-3 w-full z-40 fixed top-0 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
           {/* Logo */}
           <div className=" text-[2rem]">
             <img
@@ -90,7 +90,7 @@ function Navbar() {
                 );
               })}
               {/* Download buttons */}
-              <div className=" mt-3 border-[1px] px-[1rem] py-3 rounded-full font-semibold text-lg bg-[#000] flex items-center gap-3  border-none outline-none cursor-pointer">
+              <div className=" mt-3 border-[1px] px-[1rem] py-3 rounded-full font-semibold text-lg bg-orange-gradient flex items-center gap-3  border-none outline-none cursor-pointer">
                 <img
                   src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
                   height={24}
@@ -112,7 +112,7 @@ function Navbar() {
         </nav>
       ) : (
         // Desktop view
-        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-[1rem] w-full z-20 fixed top-0 md:px-[rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
+        <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-[1rem] w-full z-40 fixed top-0 md:px-[rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
           {/* LOGO */}
           <div className=" text-[2rem]">
             <img
@@ -164,7 +164,7 @@ function Navbar() {
             <div className=" border-[1px] px-[1rem] py-[0.5rem] rounded-full font-semibold text-sm text-center cursor-pointer lg:px-[2rem] lg:text-lg">
               <div className=" py-1">Join Dc</div>
             </div>
-            <div className=" border-[1px] px-[2rem] rounded-full font-semibold text-lg bg-purple flex items-center gap-3 cursor-pointer">
+            <div className=" button border-[1px] px-[2rem] rounded-full font-semibold text-lg outline-none border-none flex items-center gap-3 cursor-pointer">
               <img
                 src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
                 height={24}

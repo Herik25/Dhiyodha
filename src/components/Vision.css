@@ -3,7 +3,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    background-color: #113290;   
+    background-color: #fff;   
 }
 
 .vision-main-block {
@@ -328,7 +328,7 @@
 .section-title__descripion {
     padding: 10px 0 20px;
     font-size: 18px;
-    color: #fff !important;
+    color: #000 !important;
 }
 
 
@@ -337,9 +337,10 @@
     font-size: 35px;
     line-height: 50px;
     word-spacing: -4px;
-    background: -webkit-linear-gradient(#0c52e5, #099cd3, #38bf9b);
+    color: #000;
+    /* background: -webkit-linear-gradient(#000, #333);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 #textanimie path:nth-child(1) {

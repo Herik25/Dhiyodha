@@ -1,44 +1,67 @@
 import React from "react";
+import useIsMobile from "../hooks/UseIsMobile";
 
 function AboutUs() {
+  const isMobile = useIsMobile();
+
   return (
     <div className=" h-[100vh] w-full relative pt-20">
       <img
-        className=" absolute right-[15%] w-[350px]"
+        className=" absolute right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
         src="https://th.bing.com/th/id/OIP.hRfaHN0PZpqWIOBAWIAkQwHaHa?rs=1&pid=ImgDetMain"
         alt="blob"
       />
       <img
-        className=" absolute w-[350px] bottom-[10%] left-[12%]"
+        className=" absolute w-[150px] md:w-[250px] xl:w-[350px] bottom-[10%] left-0 md:left-[12%]"
         src="https://static.vecteezy.com/system/resources/previews/009/376/712/non_2x/abstract-yellow-blob-element-free-png.png"
         alt="blob2"
       />
       <div className=" flex flex-col items-center justify-center z-10 h-full">
-        <div className=" text-4xl translate-y-[-50px]">
+        <div className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl translate-y-[-30px] md:translate-y-[-40px] lg:translate-y-[-50px] font-semibold">
           A new chapter begins
         </div>
-        <p className=" max-w-[500px] text-xl mb-10 text-center">
+        <p className=" max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[500px] text-sm sm:text-base md:text-lg lg:text-xl mb-4 md:mb-10 text-center">
           Remind is joining the ParentSquare family to advance our shared
           mission of driving student success through communication and
           engagement. Together, we’re excited to create a more unified,
           multi-purpose communication platform for equitable family engagement
           throughout all schools.
         </p>
-        <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-purple flex items-center gap-3 cursor-pointer">
-          <img
-            src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
-            height={24}
-            width={24}
-            alt="apple"
-          />
-          <img
-            src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/playstore_logo.svg"
-            height={24}
-            width={24}
-            alt="playstore"
-          />
-          <div className=" text-[#fff]">Download Right now</div>
-        </div>
+        {isMobile ? (
+          <div className=" p-3 rounded-full font-semibold text-md bg-orange-gradient border-none outline-none flex items-center justify-center gap-2 cursor-pointer">
+            <img
+              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
+              height={16}
+              width={16}
+              alt="apple"
+            />
+            <img
+              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/playstore_logo.svg"
+              height={16}
+              width={16}
+              alt="playstore"
+            />
+            <div className=" text-[#fff]">
+              {isMobile ? "Download DC" : "Download DC APP!"}
+            </div>
+          </div>
+        ) : (
+          <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-orange-gradient border-none outline-none flex items-center gap-3 cursor-pointer">
+            <img
+              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
+              height={24}
+              width={24}
+              alt="apple"
+            />
+            <img
+              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/playstore_logo.svg"
+              height={24}
+              width={24}
+              alt="playstore"
+            />
+            <div className=" text-[#fff]">Download Right now</div>
+          </div>
+        )}
       </div>
       <div className=" absolute top-0 left-0 h-[100vh] w-full z-[-1]">
         <svg
@@ -75,7 +98,7 @@ function AboutUs() {
               transition: "all 0.3s ease 0s",
               strokeDasharray: 100,
               strokeDashoffset: 1000,
-              animation: "dash 30s infinite ease-in-out",
+              animation: "dash 5s infinite ease-in-out",
             }}
             stroke="url(#sw-gradient)"
           ></path>

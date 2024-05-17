@@ -41,3 +41,17 @@
 .fade-in {
   animation: fadeIn 0.3s ease-out forwards;
 }
+
+.button {
+  width: fit-content;
+  display: flex;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(to right, #484f9d, #484f9d,#4bc7ef, #4bc7ef, #ff8000, #ff8000, #db3737, #db3737) no-repeat;
+  background-size: 300%;
+  transition: background .4s ease;
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}

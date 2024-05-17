@@ -295,9 +295,9 @@ const Vision = () => {
   return (
     <section className="diyodha-vision-area z-20">
       <div className="container mx-auto px-4">
-        <div className="flex md:flex-row items-center justify-center">
-          <div className="col-span-12 text-center">
-            <h1 className="text-4xl font-bold mb-4 text-center text-[#fff]">Vision of Dhiyodha</h1>
+        <div className="flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-xl sm:text2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-[#000]">Vision of Dhiyodha</h1>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -305,7 +305,7 @@ const Vision = () => {
             <div className="home-tailer__block">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="md:w-8/12">
-                  <div className=" flex items-start justify-center pt-8">
+                  <div className=" flex items-start justify-center pt-8 translate-x-[-80px] sm:translate-x-0 md:translate-x-0 ">
                     <LogoImageAnimate className="logo-arrow__image " />
                   </div>
                 </div>

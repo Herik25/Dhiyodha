@@ -91,7 +91,7 @@ function Hero() {
             Boost your community and enhance your growth, all while you can earn
             some more!
           </p>
-          <div className=" py-4 rounded-full font-semibold text-xl bg-purple flex items-center justify-center gap-3 cursor-pointer max-w-[250px] md:max-w-[350px]">
+          <div className=" py-4 rounded-full font-semibold text-xl bg-orange-gradient border-none outline-none flex items-center justify-center gap-3 cursor-pointer max-w-[250px] md:max-w-[350px]">
             <img
               src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
               height={24}
@@ -125,7 +125,7 @@ function Hero() {
             Boost your community and enhance your growth, all while you can earn
             some more!
           </p>
-          <div className=" py-4 rounded-full font-semibold text-xl bg-purple flex items-center justify-center gap-3 cursor-pointer max-w-[250px] md:max-w-[350px]">
+          <div className=" py-4 border-[1px] border-[#000] rounded-full font-semibold text-xl bg-orange-gradient border-none outline-none flex items-center justify-center gap-3 cursor-pointer max-w-[250px] md:max-w-[350px]">
             <img
               src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
               height={24}
