@@ -9,6 +9,16 @@ export default {
       backgroundImage: {
         "orange-gradient": "var(--orange-gradient)",
       },
+      keyframes: {
+        shine: {
+          "0%": { left: "-100px" },
+          "60%": { left: "100%" },
+          "100%": { left: "100%" },
+        },
+      },
+      animation: {
+        shine: "shine 1.5s ease-out infinite",
+      },
     },
     colors: {
       blue: "#4bc7ef",

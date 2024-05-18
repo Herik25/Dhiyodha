@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import LogoWithText from "../assets/DhiyodhaLogoWithText.png";
 import useIsMobile from "../hooks/UseIsMobile";
 
 function Footer() {
   const isMobile = useIsMobile();
+  const [animation, setAnimation] = useState(false);
 
   return isMobile ? (
     <>
@@ -56,9 +57,29 @@ function Footer() {
             </div>
           </div>
           <div className=" flex flex-col gap-5">
-            <div className=" text-center text-2xl font-poppins font-semibold">
-              Join Dhiyodha!
-            </div>
+            <button
+              onMouseEnter={() => setAnimation(true)}
+              onMouseLeave={() => setAnimation(false)}
+              className="relative transition-all duration-300 bg-blue ease-in-out shadow-lg px-5 py-3 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer text-[#fff] gap-2 font-bold border border-[#fff]/30 focus:outline-none overflow-hidden text-sm hover:scale-105 hover:border-[#fff]/60"
+            >
+              <span className=" z-20">Join Dhiyodha!</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="w-6 h-6 transition-all duration-300 ease-in-out z-20 transform group-hover:translate-x-1"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+              {animation && (
+                <span
+                  className={`absolute inset-0 w-full h-full bg-gradient-to-r translate-x-[-100px] from-blue from-60% via-[#fff] to-blue to-80% z-10 opacity-60 animate-shine`}
+                ></span>
+              )}
+            </button>
             <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-orange-gradient border-none outline-none flex items-center gap-3 cursor-pointer">
               <img
                 src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
@@ -80,7 +101,7 @@ function Footer() {
     </>
   ) : (
     <div className="flex flex-col">
-      <div className=" pt-10 px-4 sm:px-20 md:px-30 lg:px-40 pb-20 flex justify-between items-center">
+      <div className=" pt-10 px-4 sm:px-10 md:px-20 lg:px-40 pb-20 flex justify-between items-center">
         <div className=" flex flex-col items-center justify-center gap-5">
           <div className=" ">
             <img width={180} src={LogoWithText} alt="Logo" />
@@ -112,9 +133,29 @@ function Footer() {
           <div className=" hover:text-blue cursor-pointer">My Application</div>
         </div>
         <div className=" flex flex-col gap-5">
-          <div className=" text-center text-2xl font-poppins font-semibold border-[#ccc] border-[1px] p-3 rounded-xl bg-[#f5f5f5] cursor-pointer">
-            Join Dhiyodha!
-          </div>
+          <button
+            onMouseEnter={() => setAnimation(true)}
+            onMouseLeave={() => setAnimation(false)}
+            className="relative transition-all duration-300 bg-blue ease-in-out shadow-lg px-5 py-3 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer text-[#fff] gap-2 font-bold border border-[#fff]/30 focus:outline-none overflow-hidden text-sm hover:scale-105 hover:border-[#fff]/60"
+          >
+            <span className=" z-20">Join Dhiyodha!</span>
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              className="w-6 h-6 transition-all duration-300 ease-in-out z-20 transform group-hover:translate-x-1"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fillRule="evenodd"
+              ></path>
+            </svg>
+            {animation && (
+              <span
+                className={`absolute inset-0 w-full h-full bg-gradient-to-r translate-x-[-100px] from-blue from-60% via-[#fff] to-blue to-80% z-10 opacity-60 animate-shine`}
+              ></span>
+            )}
+          </button>
           <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-orange-gradient border-none outline-none flex items-center gap-3 cursor-pointer">
             <img
               src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"

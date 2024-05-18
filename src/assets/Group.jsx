@@ -40,8 +40,8 @@ const GroupSvg = () => (
         y2="171"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.178806" stopColor="#F56016" />
-        <stop offset="1" stopColor="#ED3337" />
+        <stop offset="0.178806" stopColor="#ff8000" />
+        <stop offset="1" stopColor="#db3737" />
       </linearGradient>
     </defs>
   </svg>
