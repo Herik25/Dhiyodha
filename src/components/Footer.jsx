@@ -138,7 +138,7 @@ function Footer() {
             onMouseLeave={() => setAnimation(false)}
             className="relative transition-all duration-300 bg-blue ease-in-out shadow-lg px-5 py-3 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer text-[#fff] gap-2 font-bold border border-[#fff]/30 focus:outline-none overflow-hidden text-sm hover:scale-105 hover:border-[#fff]/60"
           >
-            <span className=" z-20">Join Dhiyodha!</span>
+            <span className=" z-20 text-base">Join Dhiyodha!</span>
             <svg
               fill="currentColor"
               viewBox="0 0 24 24"
