@@ -20,11 +20,11 @@ function MobileWebForm() {
   // handling the gender selection with popup
   const [isGenderPopupVisible, setIsGenderPopupVisible] = useState(false);
   const [selectedGender, setSelectedGender] = useState("");
-  console.log(selectedGender);
+  // console.log(selectedGender);
   // handling the business category selection with popup
   const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] = useState(false);
   const [selectBusinessCategory, setSelectedBusinessCategory] = useState("");
-  console.log(selectBusinessCategory);
+  // console.log(selectBusinessCategory);
 
   // Function to handle the "Next" button click
   const handleNext = () => {
@@ -225,7 +225,7 @@ function MobileWebForm() {
                       value={selectedGender}
                       onClick={() => setIsGenderPopupVisible(true)}
                       readOnly
-                      placeholder="Gender"
+                      placeholder="Marital Status"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
                   </div>
@@ -244,26 +244,6 @@ function MobileWebForm() {
                       placeholder="Business Category"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                  </div>
-                  <div className="mt-3">
-                    <input
-                      type="text"
-                      id="businessCategory"
-                      {...register("businessCategory", {
-                        required: "Business category is required",
-                        pattern: {
-                          value: /^[a-zA-Z'-]{1,49}$/,
-                          message: "Business category is not valid",
-                        },
-                      })}
-                      placeholder="Business Category"
-                      className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
-                    />
-                    {errors.businessCategory && (
-                      <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.businessCategory.message}
-                      </span>
-                    )}
                   </div>
                   
                   <div className="mt-3">
