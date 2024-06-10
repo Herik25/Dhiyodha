@@ -1,0 +1,134 @@
+[
+  {
+    "category": "Food & Beverage",
+    "subcategories": [
+      "Restaurants",
+      "Cafes",
+      "Bars & Pubs",
+      "Bakeries",
+      "Catering",
+      "Food Trucks"
+    ]
+  },
+  {
+    "category": "Retail",
+    "subcategories": [
+      "Clothing & Accessories",
+      "Electronics",
+      "Home Goods",
+      "Books & Stationery",
+      "Grocery Stores",
+      "Specialty Shops"
+    ]
+  },
+  {
+    "category": "Health & Wellness",
+    "subcategories": [
+      "Gyms & Fitness Centers",
+      "Spas & Salons",
+      "Medical Practices",
+      "Dental Clinics",
+      "Pharmacies",
+      "Nutritionists"
+    ]
+  },
+  {
+    "category": "Professional Services",
+    "subcategories": [
+      "Law Firms",
+      "Accounting & Finance",
+      "Consulting",
+      "Marketing & Advertising",
+      "Real Estate Agencies",
+      "IT Services"
+    ]
+  },
+  {
+    "category": "Education",
+    "subcategories": [
+      "Schools",
+      "Tutoring Centers",
+      "Language Schools",
+      "Vocational Training",
+      "Colleges & Universities",
+      "Test Preparation"
+    ]
+  },
+  {
+    "category": "Entertainment",
+    "subcategories": [
+      "Movie Theaters",
+      "Concert Venues",
+      "Event Planning",
+      "Nightclubs",
+      "Museums & Galleries",
+      "Amusement Parks"
+    ]
+  },
+  {
+    "category": "Automotive",
+    "subcategories": [
+      "Car Dealerships",
+      "Auto Repair & Maintenance",
+      "Car Rentals",
+      "Car Washes",
+      "Tire Shops",
+      "Auto Parts & Accessories"
+    ]
+  },
+  {
+    "category": "Travel & Hospitality",
+    "subcategories": [
+      "Hotels",
+      "Bed & Breakfasts",
+      "Travel Agencies",
+      "Tour Operators",
+      "Vacation Rentals",
+      "Resorts"
+    ]
+  },
+  {
+    "category": "Home Services",
+    "subcategories": [
+      "Plumbing",
+      "Electrical",
+      "Landscaping",
+      "Cleaning Services",
+      "Pest Control",
+      "Interior Design"
+    ]
+  },
+  {
+    "category": "Finance",
+    "subcategories": [
+      "Banks",
+      "Credit Unions",
+      "Investment Firms",
+      "Insurance Agencies",
+      "Mortgage Brokers",
+      "Financial Advisors"
+    ]
+  },
+  {
+    "category": "Beauty & Personal Care",
+    "subcategories": [
+      "Hair Salons",
+      "Nail Salons",
+      "Skincare",
+      "Cosmetics",
+      "Barbershops",
+      "Massage Therapy"
+    ]
+  },
+  {
+    "category": "Technology",
+    "subcategories": [
+      "Software Development",
+      "Hardware Sales & Services",
+      "IT Consulting",
+      "Telecommunications",
+      "Cybersecurity",
+      "Tech Support"
+    ]
+  }
+]

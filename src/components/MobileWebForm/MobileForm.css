@@ -1,0 +1,32 @@
+.mobileWebForm input::placeholder {
+  color: #6246EA;
+}
+
+.step-item {
+  @apply relative flex flex-col justify-center items-center w-36;
+}
+
+.step-item:not(:first-child):before {
+  @apply content-[''] bg-[#ccc] absolute w-full h-[3px] right-2/4 top-1/3 -translate-y-2/4;
+}
+
+.step {
+  @apply w-7 h-7 flex items-center justify-center z-10 relative border-[2px] bg-[#fff] border-[#ccc] rounded-full font-semibold text-[#fff] text-sm;
+}
+
+.active .step {
+  @apply bg-[#fff] border-[#ccc];
+}
+
+.complete .step {
+  @apply bg-[#2239bf] border-[#2239bf];
+}
+
+.complete p {
+  @apply text-[#000];
+}
+
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+  @apply bg-[#2239bf];
+}

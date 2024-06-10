@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       poppins: "Poppins, Arial, sans-serif",
+      manrope: "Manrope, sans-serif",
     },
     extend: {
       backgroundImage: {

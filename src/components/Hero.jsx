@@ -36,30 +36,30 @@ function Hero() {
       },
     });
 
-    const boxAnimation = gsap.fromTo(
-      boxRef.current,
-      { scale: 1 },
-      {
-        x: isMobile
-          ? 0
-          : window.innerWidth < 1200
-          ? -150
-          : window.innerWidth < 1600
-          ? -250
-          : -450,
-        y: 1000,
-        scale: 1.5,
-        scrollTrigger: {
-          trigger: boxRef.current,
-          start: "top",
-          scrub: true,
-        },
-      }
-    );
+    // const boxAnimation = gsap.fromTo(
+    //   boxRef.current,
+    //   { scale: 1 },
+    //   {
+    //     x: isMobile
+    //       ? 0
+    //       : window.innerWidth < 1200
+    //       ? -150
+    //       : window.innerWidth < 1600
+    //       ? -250
+    //       : -450,
+    //     y: 1000,
+    //     scale: 1.5,
+    //     scrollTrigger: {
+    //       trigger: boxRef.current,
+    //       start: "top",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
 
     return () => {
       imageAnimation.kill();
-      boxAnimation.kill();
+      // boxAnimation.kill();
     };
   };
 
@@ -94,13 +94,13 @@ function Hero() {
               className={`${
                 isMobile
                   ? "w-[250px] md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[400px]"
-                  : "md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[400px]"
+                  : "md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px]"
               }`}
               ref={imageRef}
               src={
                 animationFinished
                   ? "src/assets/image2.gif"
-                  : "src/assets/image1.gif"
+                  : "/namaste.png"
               }
               alt="image"
             />
@@ -110,7 +110,7 @@ function Hero() {
               isMobile
                 ? "w-[250px] h-[250px] md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px]"
                 : "md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px]"
-            } bg-gradient-to-b from-green to-yellow rounded-full`}
+            } `}
             ref={boxRef}
           ></div>
         </div>

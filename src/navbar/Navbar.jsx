@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowUp, IoIosMenu } from "react-icons/io";
 import { PiXBold, PiXCircleDuotone } from "react-icons/pi";
 import "./Navbar.css";
-import { BiDownArrow } from "react-icons/bi";
-import LogoWithText from "../assets/DhiyodhaLogoWithText.png"
+import { BiDownArrow, BiMobile } from "react-icons/bi";
+import LogoWithText from "../assets/DhiyodhaLogoWithText.png";
 import useIsMobile from "../hooks/UseIsMobile";
+import { CiMobile1 } from "react-icons/ci";
 
 function Navbar() {
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile();
   const [open, setOpen] = useState(false);
   const [dropDownValue, setDropDownValue] = useState("");
 
@@ -37,7 +38,10 @@ function Navbar() {
       name: "Media",
       path: "media",
       drowDown: true,
-      menu: [{ name: "DC Meetings", path: "" },{ name: "Dhiyodha", path: "" },],
+      menu: [
+        { name: "DC Meetings", path: "" },
+        { name: "Dhiyodha", path: "" },
+      ],
     },
   ];
 
@@ -48,18 +52,15 @@ function Navbar() {
         <nav className=" bg-[#fff] flex justify-between items-center px-[1rem] py-3 w-full z-40 fixed top-0 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[10rem] border-b-[1px] border-b-[#ddd]">
           {/* Logo */}
           <div className=" text-[2rem]">
-            <img
-              height={30}
-              width={100}
-              src={LogoWithText}
-              alt="Logo"
-            />
+            <img height={30} width={100} src={LogoWithText} alt="Logo" />
           </div>
           {/* Book a Demo Button */}
           <div className=" flex gap-4 items-center ">
-            <div className=" border-[1px] px-4 sm:px-[2rem] py-[0.5rem] rounded-full font-semibold text-center text-sm  sm:text-lg cursor-pointer">
-              <div className=" py-1">Join Dc</div>
-            </div>
+            <Link to="/register">
+              <div className=" border-[1px] px-4 sm:px-[2rem] py-[0.5rem] rounded-full font-semibold text-center text-sm  sm:text-md cursor-pointer">
+                <div className=" py-1">Join Dc</div>
+              </div>
+            </Link>
             <IoIosMenu size={35} onClick={() => setOpen(!open)} />
           </div>
           {/* Mobile menu */}
@@ -79,7 +80,7 @@ function Navbar() {
               className=" absolute right-[10%] top-[20px] "
             />
             {/* Mobile menu items */}
-            <div className=" my-20 px-4 text-base font-bold">
+            <div className=" my-20 px-4 text-sm font-bold">
               {navLinks.map((item, index) => {
                 const { path, name } = item;
                 return (
@@ -90,7 +91,7 @@ function Navbar() {
                 );
               })}
               {/* Download buttons */}
-              <div className=" mt-3 border-[1px] px-[1rem] py-3 rounded-full font-semibold text-lg bg-orange-gradient flex items-center gap-3  border-none outline-none cursor-pointer">
+              <div className=" mt-3 border-[1px] px-[1rem] py-3 rounded-full font-semibold text-md bg-orange-gradient flex items-center gap-3  border-none outline-none cursor-pointer">
                 <img
                   src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
                   height={24}
@@ -134,7 +135,7 @@ function Navbar() {
                   onMouseEnter={() => setDropDownValue(name)}
                   onMouseLeave={() => setDropDownValue("")}
                 >
-                  <div className=" hoverBox py-[5px] px-[1rem] text-xl font-semibold cursor-pointer flex items-center hover:text-purple ">
+                  <div className=" hoverBox py-[5px] px-[1rem] text-md font-semibold cursor-pointer flex items-center hover:text-purple ">
                     {name}
                     {item.drowDown && (
                       <div className=" translate-y-[2px] pl-1">
@@ -148,7 +149,7 @@ function Navbar() {
                       {item.menu?.map((subItem, subIndex) => (
                         // add a path here
                         <Link to="/" key={subIndex}>
-                          <div className=" mx-2 p-2 rounded-md hover:bg-[#f5f5f5] text-lg font-semibold text-center">
+                          <div className=" mx-2 p-2 rounded-md hover:bg-[#f5f5f5] text-sm font-semibold text-center">
                             {subItem.name}
                           </div>
                         </Link>
@@ -161,10 +162,12 @@ function Navbar() {
           </div>
           {/* buttons for desktop view */}
           <div className=" hidden md:flex md:gap-5">
-            <div className=" border-[1px] px-[1rem] py-[0.5rem] rounded-full font-semibold text-sm text-center cursor-pointer lg:px-[2rem] lg:text-lg">
-              <div className=" py-1">Join Dc</div>
-            </div>
-            <div className=" button border-[1px] px-[2rem] rounded-full font-semibold text-lg outline-none border-none flex items-center gap-3 cursor-pointer">
+            <Link to="/register">
+              <div className=" border-[1px] px-[1rem] py-[0.5rem] rounded-full font-semibold text-sm text-center cursor-pointer lg:px-[2rem] lg:text-md">
+                <div className=" py-1">Join Dc</div>
+              </div>
+            </Link>
+            <div className=" button border-[1px] px-[2rem] rounded-full font-semibold text-md outline-none border-none flex items-center gap-3 cursor-pointer">
               <img
                 src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
                 height={24}
@@ -179,6 +182,9 @@ function Navbar() {
               />
               <div className=" text-[#fff]">Download Right now</div>
             </div>
+            <Link className=" flex items-center" to="/mobile-web-form">
+              <CiMobile1 size={24} />
+            </Link>
           </div>
         </nav>
       )}

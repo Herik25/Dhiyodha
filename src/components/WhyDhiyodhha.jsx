@@ -84,12 +84,12 @@ function WhyDhiyodhha() {
       </div>
       <div className=" flex items-center w-[300vw] bg-purple">
         <section className=" w-[60vw] flex justify-center items-center m-20">
-          <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
+          <div className=" bg-[#fff] w-full h-full py-[120px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">
+              <div className="text-[28px] font-bold max-w-[60%]">
                 Private Groups and Chanels
               </div>
-              <div className=" text-[22px] font-semibold">
+              <div className=" text-[18px] font-semibold">
                 Created a Trusted Space With Paid Private Groups And Chanels To
                 Frhter Enhance Yoour Engagement
               </div>
@@ -98,12 +98,12 @@ function WhyDhiyodhha() {
           </div>
         </section>
         <section className=" w-[60vw] flex justify-center items-center m-20">
-          <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
+          <div className=" bg-[#fff] w-full h-full py-[120px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">
+              <div className="text-[28px] font-bold max-w-[60%]">
                 Private Groups and Chanels
               </div>
-              <div className=" text-[22px] font-semibold">
+              <div className=" text-[18px] font-semibold">
                 Created a Trusted Space With Paid Private Groups And Chanels To
                 Frhter Enhance Yoour Engagement
               </div>
@@ -112,12 +112,12 @@ function WhyDhiyodhha() {
           </div>
         </section>
         <section className=" w-[60vw] flex justify-center items-center m-20">
-          <div className=" bg-[#fff] w-full h-full py-[150px] rounded-[50px] flex items-center justify-between px-10">
+          <div className=" bg-[#fff] w-full h-full py-[120px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col max-w-[50%] ">
-              <div className="text-[32px] font-bold max-w-[60%]">
+              <div className="text-[28px] font-bold max-w-[60%]">
                 Private Groups and Chanels
               </div>
-              <div className=" text-[22px] font-semibold">
+              <div className=" text-[18px] font-semibold">
                 Created a Trusted Space With Paid Private Groups And Chanels To
                 Frhter Enhance Yoour Engagement
               </div>
