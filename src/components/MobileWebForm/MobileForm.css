@@ -30,3 +30,45 @@
 .active:not(:first-child):before {
   @apply bg-[#2239bf];
 }
+
+/* mobile form pop up css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .popup div {
+  overflow-y: auto;
+  padding: 20px 60px;
+  /* background-color: #6246ea;   */
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+.popup div:last-child {
+  border-bottom: none;
+}
+
+.popup button:hover {
+  background-color: #503bcf;
+}

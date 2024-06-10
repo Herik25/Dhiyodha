@@ -17,6 +17,14 @@ function MobileWebForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  // handling the gender selection with popup
+  const [isGenderPopupVisible, setIsGenderPopupVisible] = useState(false);
+  const [selectedGender, setSelectedGender] = useState("");
+  console.log(selectedGender);
+  // handling the business category selection with popup
+  const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] = useState(false);
+  const [selectBusinessCategory, setSelectedBusinessCategory] = useState("");
+  console.log(selectBusinessCategory);
 
   // Function to handle the "Next" button click
   const handleNext = () => {
@@ -34,19 +42,80 @@ function MobileWebForm() {
     }
   };
 
+  // Function to handle gender selection
+  const handleGenderSelect = (gender) => {
+    setSelectedGender(gender);
+    setIsGenderPopupVisible(false);
+  };
+
+  // Function to handle business category selection
+  const handleBusunessCategory = (category) => {
+    setSelectedBusinessCategory(category);
+    setIsBusinessCategoryPopupVisible(false);
+  };
+
   // Function to handle form submission
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    // add countryCode, mobileNo
+    // TODO: companyDetails under this [] and city state and pinCode under address
+
     if (currentStep === steps.length) {
-      setComplete(true);
+      try {
+        const response = await fetch(
+          "https://your-backend-url.com/api/endpoint",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          }
+        );
+
+        if (response.ok) {
+          const result = await response.json();
+          console.log("Form submission successful:", result);
+          setComplete(true);
+        } else {
+          console.error("Form submission failed:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     } else {
       handleNext();
     }
   };
 
   return (
-    <div className="mobileWebForm h-[100vh] overflow-hidden">
+    <div className="mobileWebForm h-[100vh]">
       <div className="flex flex-col h-full">
+        {/* gender pop up box */}
+        {isGenderPopupVisible && (
+          <div className="popup-overlay">
+            <div className="popup">
+              <div onClick={() => handleGenderSelect("Single")}>Single</div>
+              <div onClick={() => handleGenderSelect("Married")}>
+              Married
+              </div>
+            </div>
+          </div>
+        )}
+        {/* business category pop up box */}
+        {isBusinessCategoryPopupVisible && (
+          <div className="popup-overlay">
+            <div className="popup">
+              <div onClick={() => handleBusunessCategory("Agriculture")}>Agiculture</div>
+              <div onClick={() => handleBusunessCategory("Education")}>Education</div>
+              <div onClick={() => handleBusunessCategory("Entertainment")}>Entertainment</div>
+              <div onClick={() => handleBusunessCategory("Finance")}>Finance</div>
+              <div onClick={() => handleBusunessCategory("Healthcare")}>Healthcare</div>
+              <div onClick={() => handleBusunessCategory("Retail")}>Retail</div>
+              <div onClick={() => handleBusunessCategory("Technology")}>Technology</div>
+            </div>
+          </div>
+        )}
         {/* Header with navigation buttons and step title */}
         <div className="p-4 border-[#000] border-b-[1px]">
           <div className="flex justify-between items-center">
@@ -79,9 +148,9 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      name="first_name"
-                      id="first_name"
-                      {...register("first_name", {
+                      name="firstName"
+                      id="firstName"
+                      {...register("firstName", {
                         required: "first name is required",
                         pattern: {
                           value: /^[a-zA-Z'-]{1,49}$/,
@@ -91,17 +160,17 @@ function MobileWebForm() {
                       placeholder="First Name"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.first_name && (
+                    {errors.firstName && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.first_name.message}
+                        {errors.firstName.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="last_name"
-                      {...register("last_name", {
+                      id="lastName"
+                      {...register("lastName", {
                         required: "last name is required",
                         pattern: {
                           value: /^[a-zA-Z'-]{1,49}$/,
@@ -111,9 +180,9 @@ function MobileWebForm() {
                       placeholder="Last Name"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.last_name && (
+                    {errors.lastName && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.last_name.message}
+                        {errors.lastName.message}
                       </span>
                     )}
                   </div>
@@ -140,7 +209,7 @@ function MobileWebForm() {
                       {...register("education", {
                         required: "education is required",
                       })}
-                      placeholder="Education"
+                      placeholder="education"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
                     {errors.education && (
@@ -152,19 +221,13 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      name="marital_status"
-                      id="marital_status"
-                      {...register("marital_status", {
-                        required: "marital status required",
-                      })}
-                      placeholder="Marital Status"
+                      id="gender"
+                      value={selectedGender}
+                      onClick={() => setIsGenderPopupVisible(true)}
+                      readOnly
+                      placeholder="Gender"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.marital_status && (
-                      <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.marital_status.message}
-                      </span>
-                    )}
                   </div>
                 </div>
               )}
@@ -174,8 +237,19 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="business_category"
-                      {...register("business_category", {
+                      id="businessCategory"
+                      value={selectBusinessCategory}
+                      onClick={() => setIsBusinessCategoryPopupVisible(true)}
+                      readOnly
+                      placeholder="Business Category"
+                      className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
+                    />
+                  </div>
+                  <div className="mt-3">
+                    <input
+                      type="text"
+                      id="businessCategory"
+                      {...register("businessCategory", {
                         required: "Business category is required",
                         pattern: {
                           value: /^[a-zA-Z'-]{1,49}$/,
@@ -185,17 +259,18 @@ function MobileWebForm() {
                       placeholder="Business Category"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.business_category && (
+                    {errors.businessCategory && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.business_category.message}
+                        {errors.businessCategory.message}
                       </span>
                     )}
                   </div>
+                  
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="company_name"
-                      {...register("company_name", {
+                      id="companyName"
+                      {...register("companyName", {
                         required: "Company name is required",
                         pattern: {
                           value: /^[a-zA-Z'-]{1,49}$/,
@@ -205,18 +280,18 @@ function MobileWebForm() {
                       placeholder="Company Name"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.company_name && (
+                    {errors.companyName && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.company_name.message}
+                        {errors.companyName.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="established_year"
+                      id="establishedYear"
                       placeholder="Year of Establishment"
-                      {...register("established_year", {
+                      {...register("establishedYear", {
                         required: "Established year is required",
                         pattern: {
                           value: /^(19|20)\d{2}$/,
@@ -225,9 +300,9 @@ function MobileWebForm() {
                       })}
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.established_year && (
+                    {errors.establishedYear && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.established_year.message}
+                        {errors.establishedYear.message}
                       </span>
                     )}
                   </div>
@@ -252,18 +327,18 @@ function MobileWebForm() {
                     <div className="mt-3">
                       <input
                         type="text"
-                        name="pincode"
-                        id="pincode"
+                        name="pinCode"
+                        id="pinCode"
                         maxLength={6}
-                        {...register("pincode", {
-                          required: "pincode is required",
+                        {...register("pinCode", {
+                          required: "pinCode is required",
                         })}
                         placeholder="Pin Code"
                         className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                       />
-                      {errors.pincode && (
+                      {errors.pinCode && (
                         <span className="text-[#ff3737] text-xs pl-1">
-                          {errors.pincode.message}
+                          {errors.pinCode.message}
                         </span>
                       )}
                     </div>
@@ -294,8 +369,8 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="number_of_employees"
-                      {...register("number_of_employees", {
+                      id="numberOfStaff"
+                      {...register("numberOfStaff", {
                         required: "nomber of staff is required",
                         pattern: {
                           value: /^([1-9]\d{0,3}|10000)$/,
@@ -305,25 +380,25 @@ function MobileWebForm() {
                       placeholder="Number of Staff"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.number_of_employees && (
+                    {errors.numberOfStaff && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.number_of_employees.message}
+                        {errors.numberOfStaff.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="company_registration"
-                      {...register("company_registration", {
+                      id="companyRegistration"
+                      {...register("companyRegistration", {
                         required: "company registration is required",
                       })}
                       placeholder="Company Registration"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.company_registration && (
+                    {errors.companyRegistration && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.company_registration.message}
+                        {errors.companyRegistration.message}
                       </span>
                     )}
                   </div>
@@ -336,9 +411,9 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      id="gst_number"
+                      id="gstNumber"
                       placeholder="GST Number(Optional)"
-                      {...register("gst_number", {
+                      {...register("gstNumber", {
                         pattern: {
                           value:
                             /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/,
@@ -347,18 +422,18 @@ function MobileWebForm() {
                       })}
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.gst_number && (
+                    {errors.gstNumber && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.gst_number.message}
+                        {errors.gstNumber.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="text"
-                      name="office_number"
-                      id="office_number"
-                      {...register("office_number", {
+                      name="officeNumber"
+                      id="officeNumber"
+                      {...register("officeNumber", {
                         required: "office number is required",
                         pattern: {
                           value: /^(\+91[\-\s]?)?[6-9]\d{9}$/,
@@ -368,18 +443,18 @@ function MobileWebForm() {
                       placeholder="Office Number"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.office_number && (
+                    {errors.officeNumber && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.office_number.message}
+                        {errors.officeNumber.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="text"
-                      name="office_email"
-                      id="office_email"
-                      {...register("office_email", {
+                      name="officeEmail"
+                      id="officeEmail"
+                      {...register("officeEmail", {
                         required: "office email is required",
                         pattern: {
                           value:
@@ -390,9 +465,9 @@ function MobileWebForm() {
                       placeholder="Office Email"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.office_email && (
+                    {errors.officeEmail && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.office_email.message}
+                        {errors.officeEmail.message}
                       </span>
                     )}
                   </div>
@@ -404,9 +479,9 @@ function MobileWebForm() {
                   <div className="mt-3">
                     <input
                       type="text"
-                      name="user_email"
-                      id="user_email"
-                      {...register("user_email", {
+                      name="email"
+                      id="email"
+                      {...register("email", {
                         required: "Email is required",
                         pattern: {
                           value:
@@ -417,17 +492,17 @@ function MobileWebForm() {
                       placeholder="Email"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.user_email && (
+                    {errors.email && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.user_email.message}
+                        {errors.email.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="password"
-                      id="user_password"
-                      {...register("user_password", {
+                      id="password"
+                      {...register("password", {
                         required: "Password is required",
                         minLength: {
                           value: 8,
@@ -444,28 +519,28 @@ function MobileWebForm() {
                       placeholder="Password"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.user_password && (
+                    {errors.password && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.user_password.message}
+                        {errors.password.message}
                       </span>
                     )}
                   </div>
                   <div className="mt-3">
                     <input
                       type="password"
-                      id="confirm_password"
-                      {...register("confirm_password", {
+                      id="confirmPassword"
+                      {...register("confirmPassword", {
                         required: "Confirm password is required",
                         validate: (value, formvalues) =>
-                          value === formvalues.user_password ||
+                          value === formvalues.password ||
                           "Passwords do not match",
                       })}
                       placeholder="Confirm Password"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
-                    {errors.confirm_password && (
+                    {errors.confirmPassword && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.confirm_password.message}
+                        {errors.confirmPassword.message}
                       </span>
                     )}
                   </div>
@@ -506,6 +581,7 @@ function MobileWebForm() {
                   className=" w-full bg-[#061237] py-2 text-center text-[#E2DDFB] rounded-md shadow-md shadow-[#DAD3FB] mb-2"
                 >
                   {currentStep === steps.length ? "Submit" : "Next"}
+                  {}
                 </button>
               </div>
             </div>
