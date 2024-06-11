@@ -26,6 +26,9 @@ function MobileWebForm() {
     useState(false);
   const [selectBusinessCategory, setSelectedBusinessCategory] = useState("");
   // console.log(selectBusinessCategory);
+  // handeling the company registration
+  const [isBusinessRegistration, setIsBusinessRegistration] = useState(false);
+  const [businessRegistration, setBusinessRegistration] = useState("");
 
   // Function to handle the "Next" button click
   const handleNext = () => {
@@ -55,6 +58,12 @@ function MobileWebForm() {
     setIsBusinessCategoryPopupVisible(false);
   };
 
+  // Function to handle business category selection
+  const handleBusunessRegistration = (type) => {
+    setBusinessRegistration(type);
+    setIsBusinessRegistration(false);
+  };
+
   // Function to handle form submission
   const onSubmit = async (data) => {
     // json object
@@ -72,7 +81,7 @@ function MobileWebForm() {
       companyDetails: {
         businessCategory: "AGRICULTURE",
         companyName: data.companyName,
-        companyRegistration: data.companyRegistration,
+        companyRegistration: businessRegistration,
         establishedYear: 2018,
         numberOfStaff: data.numberOfStaff,
         gstNumber: data.gstNumber,
@@ -151,6 +160,27 @@ function MobileWebForm() {
               <div onClick={() => handleBusunessCategory("RETAIL")}>Retail</div>
               <div onClick={() => handleBusunessCategory("Technology")}>
                 Technology
+              </div>
+            </div>
+          </div>
+        )}
+        {isBusinessRegistration && (
+          <div className="popup-overlay">
+            <div className="popup">
+              <div onClick={() => handleBusunessRegistration("SOLO_PROPRIETOR")}>
+                Solo Proprietor
+              </div>
+              <div onClick={() => handleBusunessRegistration("PARTNERSHIP")}>
+                Parternership
+              </div>
+              <div onClick={() => handleBusunessRegistration("PRIVATE_LIMITED")}>
+                Private Limited
+              </div>
+              <div onClick={() => handleBusunessRegistration("NGO")}>
+                NGO
+              </div>
+              <div onClick={() => handleBusunessRegistration("NON_REGISTERED")}>
+                Non Registered
               </div>
             </div>
           </div>
@@ -409,6 +439,17 @@ function MobileWebForm() {
                     <input
                       type="text"
                       id="companyRegistration"
+                      value={businessRegistration.split("_").join(" ")}
+                      onClick={() => setIsBusinessRegistration(true)}
+                      readOnly
+                      placeholder="Company Registration"
+                      className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
+                    />
+                  </div>
+                  {/* <div className="mt-3">
+                    <input
+                      type="text"
+                      id="companyRegistration"
                       {...register("companyRegistration", {
                         required: "company registration is required",
                       })}
@@ -420,7 +461,7 @@ function MobileWebForm() {
                         {errors.companyRegistration.message}
                       </span>
                     )}
-                  </div>
+                  </div> */}
                   {/* <div className=" flex items-center mt-5">
                     <div className=" bg-[#E4E7FF] px-4 py-1 rounded-lg text-[12px] text-[#6246EA] min-w-[100px]">
                       Service Area
