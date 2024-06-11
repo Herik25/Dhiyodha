@@ -22,7 +22,8 @@ function MobileWebForm() {
   const [selectedGender, setSelectedGender] = useState("");
   // console.log(selectedGender);
   // handling the business category selection with popup
-  const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] = useState(false);
+  const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] =
+    useState(false);
   const [selectBusinessCategory, setSelectedBusinessCategory] = useState("");
   // console.log(selectBusinessCategory);
 
@@ -56,22 +57,50 @@ function MobileWebForm() {
 
   // Function to handle form submission
   const onSubmit = async (data) => {
-    console.log(data);
-    // add countryCode, mobileNo
-    // TODO: companyDetails under this [] and city state and pinCode under address
+    // json object
+    const userObject = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+      dob: data.dob,
+      countryCode: "IN",
+      mobileNo: "8799026842",
+      password: data.password,
+      confirmPassword: data.confirmPassword,
+      education: data.education,
+      maritalStatus: "MARRIED",
+      companyDetails: {
+        businessCategory: "AGRICULTURE",
+        companyName: data.companyName,
+        companyRegistration: data.companyRegistration,
+        establishedYear: 2018,
+        numberOfStaff: data.numberOfStaff,
+        gstNumber: data.gstNumber,
+        officeNumber: data.officeNumber,
+        officeEmail: data.officeEmail,
+      },
+      address: {
+        city: data.city,
+        state: data.state,
+        pinCode: data.pinCode,
+      },
+    };
+
+    console.log(userObject);
 
     if (currentStep === steps.length) {
       try {
         const response = await fetch(
-          "https://your-backend-url.com/api/endpoint",
+          "https://legal-planes-lead.loca.lt/api/socialAuth/memberSignup",
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify(userObject),
           }
         );
+        console.log(response);
 
         if (response.ok) {
           const result = await response.json();
@@ -95,10 +124,8 @@ function MobileWebForm() {
         {isGenderPopupVisible && (
           <div className="popup-overlay">
             <div className="popup">
-              <div onClick={() => handleGenderSelect("Single")}>Single</div>
-              <div onClick={() => handleGenderSelect("Married")}>
-              Married
-              </div>
+              <div onClick={() => handleGenderSelect("SINGLE")}>Single</div>
+              <div onClick={() => handleGenderSelect("MARRIED")}>Married</div>
             </div>
           </div>
         )}
@@ -106,13 +133,25 @@ function MobileWebForm() {
         {isBusinessCategoryPopupVisible && (
           <div className="popup-overlay">
             <div className="popup">
-              <div onClick={() => handleBusunessCategory("Agriculture")}>Agiculture</div>
-              <div onClick={() => handleBusunessCategory("Education")}>Education</div>
-              <div onClick={() => handleBusunessCategory("Entertainment")}>Entertainment</div>
-              <div onClick={() => handleBusunessCategory("Finance")}>Finance</div>
-              <div onClick={() => handleBusunessCategory("Healthcare")}>Healthcare</div>
-              <div onClick={() => handleBusunessCategory("Retail")}>Retail</div>
-              <div onClick={() => handleBusunessCategory("Technology")}>Technology</div>
+              <div onClick={() => handleBusunessCategory("AGRICULTURE")}>
+                Agriculture
+              </div>
+              <div onClick={() => handleBusunessCategory("EDUCATION")}>
+                Education
+              </div>
+              <div onClick={() => handleBusunessCategory("ENTERTAINMENT")}>
+                Entertainment
+              </div>
+              <div onClick={() => handleBusunessCategory("FINANCE")}>
+                Finance
+              </div>
+              <div onClick={() => handleBusunessCategory("HEALTHCARE")}>
+                Healthcare
+              </div>
+              <div onClick={() => handleBusunessCategory("RETAIL")}>Retail</div>
+              <div onClick={() => handleBusunessCategory("Technology")}>
+                Technology
+              </div>
             </div>
           </div>
         )}
@@ -245,7 +284,7 @@ function MobileWebForm() {
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
                   </div>
-                  
+
                   <div className="mt-3">
                     <input
                       type="text"
@@ -491,16 +530,16 @@ function MobileWebForm() {
                         },
                         pattern: {
                           value:
-                            /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/,
+                            /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
                           message:
-                            "Password must contain at least one letter and one number",
+                            "Password must include uppercase, number and special character",
                         },
                       })}
                       placeholder="Password"
                       className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
                     />
                     {errors.password && (
-                      <span className="text-[#ff3737] text-xs pl-1">
+                      <span className="text-[#ff3737] text-[11px] pl-1">
                         {errors.password.message}
                       </span>
                     )}
