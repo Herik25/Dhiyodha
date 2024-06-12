@@ -100,7 +100,7 @@ function MobileWebForm() {
     if (currentStep === steps.length) {
       try {
         const response = await fetch(
-          "https://legal-planes-lead.loca.lt/api/socialAuth/memberSignup",
+          "https://dry-eggs-pay.loca.lt/api/socialAuth/memberSignup",
           {
             method: "POST",
             headers: {
