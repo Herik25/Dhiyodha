@@ -5,11 +5,17 @@ import businessCategories from "./JSON-Objs/businessCategories";
 import useIsMobile from "../../hooks/UseIsMobile";
 import MobileRegister from "./MobileRegister";
 import { useForm } from "react-hook-form";
+import { event } from "jquery";
 
 function Register() {
+  const [formData, setFormData] = useState({})
+  console.log(formData);
   const [currentStep, setCurrentStep] = useState(1);
   const isMobile = useIsMobile();
   const [successMessage, setSuccessMessage] = useState("");
+  const [country, setContry] = useState("");
+  const [state, setState] = useState("");
+  const [city, setCity] = useState("");
   const {
     register,
     handleSubmit,
@@ -17,17 +23,17 @@ function Register() {
     formState: { errors },
   } = useForm();
 
-  // const countries = Country.getAllCountries();
-  // const states = State.getAllStates();
-  // const cities = City.getAllCities();
-  // const filteredStates = states.filter(
-  //   (state) => state.countryCode === formData.selectedCountry
-  // );
-  // const filteredCities = cities.filter(
-  //   (city) =>
-  //     city.countryCode === formData.selectedCountry &&
-  //     city.stateCode === formData.selectedState
-  // );
+  const countries = Country.getAllCountries();
+  const states = State.getAllStates();
+  const cities = City.getAllCities();
+  const filteredStates = states.filter(
+    (state) => state.countryCode === country
+  );
+  const filteredCities = cities.filter(
+    (city) =>
+      city.countryCode === country &&
+      city.stateCode === state
+  );
   // const filteredBusinessCategories = businessCategories.map(
   //   (businessCategory) => businessCategory.category
   // );
@@ -65,7 +71,12 @@ function Register() {
         </div>
       ) : (
         <form
-          onSubmit={handleSubmit((data) => console.log(data))}
+          onSubmit={handleSubmit((data) => setFormData({
+            ...data,
+            country: country,
+            state: state,
+            city: city,
+          }))}
           className=" pt-16 sm:pt-20 md:pt-32  lg:pt-40 mx-2 sm:mx-18 md:mx-36 lg:mx-56"
         >
           <div className="stepwizard" id="stepwizard">
@@ -320,7 +331,7 @@ function Register() {
                     )}
                   </div>
 
-                  {/* <div className="mt-1">
+                  <div className="mt-1">
                     <label
                       htmlFor="selectedCountry"
                       className="text-[#000] text-base font-normal"
@@ -331,8 +342,8 @@ function Register() {
                     <select
                       id="selectedCountry"
                       name="selectedCountry"
-                      // value={formData.selectedCountry}
-                      // onChange={handleChange}
+                      value={country}
+                      onChange={(event) => setContry(event.target.value)}
                       className="bg-gray-50 border-[1px] border-[#ccc] text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     >
                       <option value="">Select your country</option>
@@ -342,7 +353,7 @@ function Register() {
                         </option>
                       ))}
                     </select>
-                  </div> */}
+                  </div>
                   <div className="mt-1">
                     <label
                       htmlFor="aadhar_number"
@@ -534,7 +545,7 @@ function Register() {
                       </span>
                     )}
                   </div>
-                  {/* <div className="mt-1">
+                  <div className="mt-1">
                     <label
                       htmlFor="selectedState"
                       className="text-[#000] text-base font-normal"
@@ -544,8 +555,8 @@ function Register() {
                     <select
                       id="selectedState"
                       name="selectedState"
-                      // value={formData.selectedState}
-                      // onChange={handleChange}
+                      value={state}
+                      onChange={(event) => setState(event.target.value)}
                       className="bg-gray-50 border-[1px] border-[#ccc] text-sm font-normal rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     >
                       <option value="">Select your state</option>
@@ -555,9 +566,9 @@ function Register() {
                         </option>
                       ))}
                     </select>
-                  </div> */}
+                  </div>
 
-                  {/* <div className="mt-1">
+                  <div className="mt-1">
                     <label
                       htmlFor="selectedCity"
                       className="text-[#000] text-base font-normal"
@@ -578,7 +589,7 @@ function Register() {
                         </option>
                       ))}
                     </select>
-                  </div> */}
+                  </div>
                   <div className="mt-1">
                     <label
                       htmlFor="pan_number"

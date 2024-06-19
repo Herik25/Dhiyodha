@@ -4,8 +4,8 @@ import { IoIosArrowDown, IoIosArrowUp, IoIosMenu } from "react-icons/io";
 import { PiXBold, PiXCircleDuotone } from "react-icons/pi";
 import "./Navbar.css";
 import { BiDownArrow, BiMobile } from "react-icons/bi";
-import LogoWithText from "../assets/DhiyodhaLogoWithText.png";
-import useIsMobile from "../hooks/UseIsMobile";
+import LogoWithText from "../../assets/DhiyodhaLogoWithText.png";
+import useIsMobile from "../../hooks/UseIsMobile";
 import { CiMobile1 } from "react-icons/ci";
 
 function Navbar() {

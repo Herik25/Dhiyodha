@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./navbar/Navbar";
 import Hero from "./components/Hero";
 import Test from "./components/Test";
 import Vision from "./components/Vision";
@@ -10,6 +9,7 @@ import Footer from "./components/Footer";
 import CurveyLine from "./components/CurveyLine";
 import AboutUs from "./components/AboutUs";
 import IgFeed from "./components/IgFeed";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (

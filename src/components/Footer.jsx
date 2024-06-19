@@ -101,6 +101,9 @@ function Footer() {
     </>
   ) : (
     <div className="flex flex-col">
+      <div>
+        <img className=" w-full" src="/group_of_women.png" alt="groupOfWomen" />
+      </div>
       <div className=" pt-10 px-4 sm:px-10 md:px-20 lg:px-40 pb-20 flex justify-between items-center">
         <div className=" flex flex-col items-center justify-center gap-5">
           <div className=" ">

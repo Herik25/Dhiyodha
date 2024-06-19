@@ -18,7 +18,7 @@ function Hero() {
         ? -150
         : window.innerWidth < 1600
         ? -250
-        : -450,
+        : -400,
       y: 1050,
       scale: 1.5,
       scrollTrigger: {
@@ -94,14 +94,10 @@ function Hero() {
               className={`${
                 isMobile
                   ? "w-[250px] md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[400px]"
-                  : "md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px]"
+                  : "md:h-[300px] md:w-[300px] lg:h-[450px] lg:w-[500px]"
               }`}
               ref={imageRef}
-              src={
-                animationFinished
-                  ? "src/assets/image2.gif"
-                  : "/namaste.png"
-              }
+              src={animationFinished ? "/namaste_2.png" : "/namaste_2.png"}
               alt="image"
             />
           </div>
@@ -116,11 +112,11 @@ function Hero() {
         </div>
         <div className="flex flex-col text-[#fff]">
           <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-semibold mb-8">
-            Created For <br /> Creators.
+            Achieve with <br /> Dhiyodha.
           </p>
           <p className="text-[15px] sm:text-[20px] md:[24px] lg:text-[26px] font-medium mb-10 max-w-[350px] sm:max-w-[450px] md:[600px] lg:max-w-[800px]">
-            Boost your community and enhance your growth, all while you can earn
-            some more!
+            Empowering women to connect, learn, and thrive in a supportive
+            community.
           </p>
           <div className="py-4 rounded-full font-semibold text-xl bg-orange-gradient border-none outline-none flex items-center justify-center gap-3 cursor-pointer max-w-[250px] md:max-w-[350px]">
             <img

@@ -5,7 +5,7 @@ function AboutUs() {
   const isMobile = useIsMobile();
 
   return (
-    <div className=" h-[100vh] w-full relative pt-20">
+    <div className=" h-screen w-full relative pt-20">
       <img
         className=" absolute right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
         src="https://th.bing.com/th/id/OIP.hRfaHN0PZpqWIOBAWIAkQwHaHa?rs=1&pid=ImgDetMain"
@@ -18,14 +18,15 @@ function AboutUs() {
       />
       <div className=" flex flex-col items-center justify-center z-10 h-full">
         <div className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl translate-y-[-30px] md:translate-y-[-40px] lg:translate-y-[-50px] font-semibold">
-          A new chapter begins
+          About Us
         </div>
         <p className=" max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[500px] text-sm sm:text-base md:text-lg lg:text-xl mb-4 md:mb-10 text-center">
-          Remind is joining the ParentSquare family to advance our shared
-          mission of driving student success through communication and
-          engagement. Together, we’re excited to create a more unified,
-          multi-purpose communication platform for equitable family engagement
-          throughout all schools.
+          Today's woman is intelligent and versatile. From home to the border,
+          from land to sky, from office cleaning to company establishment, women
+          are managing their personal and professional lives exceptionally well.
+          Then Dhiyodha with the slogan of "the strength of nation" wants to tie
+          all the women of the world from home minister to managing director in
+          one thread and make the consent of WE ARE ONE meaningful for women.
         </p>
         {isMobile ? (
           <div className=" p-3 rounded-full font-semibold text-md bg-orange-gradient border-none outline-none flex items-center justify-center gap-2 cursor-pointer">
@@ -47,19 +48,7 @@ function AboutUs() {
           </div>
         ) : (
           <div className=" border-[1px] px-[2rem] py-[1rem] rounded-full font-semibold text-lg bg-orange-gradient border-none outline-none flex items-center gap-3 cursor-pointer">
-            <img
-              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/apple_logo.svg"
-              height={24}
-              width={24}
-              alt="apple"
-            />
-            <img
-              src="https://app.rigi.club/wp-content/themes/Rigi/assets/img/playstore_logo.svg"
-              height={24}
-              width={24}
-              alt="playstore"
-            />
-            <div className=" text-[#fff]">Download Right now</div>
+            <div className=" text-[#fff]">Read More</div>
           </div>
         )}
       </div>

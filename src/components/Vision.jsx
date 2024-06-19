@@ -31,10 +31,9 @@ const Vision = () => {
             altName: "Logistics and Hospitality App UX UI-Avana",
             ariaLabel: "Avana Logistics app designed by Divami",
             title: "Networking",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod  saepe..",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod.",
+            tagline: "“Women Building Success Together.”",
+            message: `Connect with other women to share ideas, get advice, and build valuable business relationships. Join a vibrant community where collaboration and support are at the forefront, fostering connections that lead to mutual growth and success. Participate in networking events, both online and offline, to expand your professional circle. Build a supportive network that empowers you to overcome challenges and achieve your goals. Discover mentorship opportunities and forge partnerships that enhance your business journey.`,
+            mobileMessage: `Connect with other women to share ideas, get advice, and build valuable business relationships. Join a vibrant community where collaboration and support are at the forefront, fostering connections that lead to mutual growth and success. Participate in networking events, both online and offline, to expand your professional circle. Build a supportive network that empowers you to overcome challenges and achieve your goals. Discover mentorship opportunities and forge partnerships that enhance your business journey.`,
           },
           {
             linkName: "uxportfolio/corpus",
@@ -43,10 +42,9 @@ const Vision = () => {
             altName: "SocialMedia and Entertainment UX UI-Corpus",
             ariaLabel: "Corpus Smart tv platform designed by Divami",
             title: "Learning",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe..",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe..",
+            tagline: "“Grow Together Through Shared Experiences.”",
+            message: `Learn new things from each other's experiences and grow together. Participate in workshops, webinars, and discussion groups designed to expand your knowledge and skills. Engage with industry experts and thought leaders who share their insights and expertise. Stay ahead in your professional journey with continuous learning and development opportunities. Access a wealth of resources, from e-books to online courses, tailored to your business needs and interests.`,
+            mobileMessage: `Learn new things from each other's experiences and grow together. Participate in workshops, webinars, and discussion groups designed to expand your knowledge and skills. Engage with industry experts and thought leaders who share their insights and expertise. Stay ahead in your professional journey with continuous learning and development opportunities. Access a wealth of resources, from e-books to online courses, tailored to your business needs and interests.`,
           },
           {
             linkName: "uxportfolio/semantify",
@@ -55,10 +53,9 @@ const Vision = () => {
             altName: "Technology Web App UX UI-Semantify",
             ariaLabel: "Semantify analytics platform designed by Divami",
             title: "Earning",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex, facilis vitae voluptas saepe..",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dol",
+            tagline: "“Expand Your Reach, Boost Your Income.”",
+            message: `Find new clients and business opportunities to increase your income. Showcase your products and services to a wider audience through our platform. Utilize targeted marketing strategies to attract potential customers and business partners. Enhance your earning potential by leveraging our resources and connections. Benefit from tools and tips designed to maximize your sales and expand your market presence.`,
+            mobileMessage: `Find new clients and business opportunities to increase your income. Showcase your products and services to a wider audience through our platform. Utilize targeted marketing strategies to attract potential customers and business partners. Enhance your earning potential by leveraging our resources and connections. Benefit from tools and tips designed to maximize your sales and expand your market presence.`,
           },
           {
             linkName: "uxportfolio/incx",
@@ -67,10 +64,9 @@ const Vision = () => {
             altName: "Cryptocurrency Web and Mobile App UX UI-INCX",
             ariaLabel: "Incx Cryptocurrency app designed by Divami",
             title: "Identification",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusilis vitae voluptas saepe..",
+            tagline: "“Strength Unleashed, Opportunities Secured.”",
+            message: `Discover your business strengths and uncover new opportunities with our insights. Access detailed analytics and reports that help you understand your market position. Identify areas for growth and improvement with our expert guidance. Make informed decisions that empower your business to thrive and succeed. Use our diagnostic tools to assess your strengths and discover untapped potential in your business model.`,
+            mobileMessage: `Discover your business strengths and uncover new opportunities with our insights. Access detailed analytics and reports that help you understand your market position. Identify areas for growth and improvement with our expert guidance. Make informed decisions that empower your business to thrive and succeed. Use our diagnostic tools to assess your strengths and discover untapped potential in your business model.`,
           },
           {
             linkName: "uxportfolio/medicopia",
@@ -79,10 +75,9 @@ const Vision = () => {
             altName: "Healthcare Mobile App UX UI Sample-Medicopia",
             ariaLabel: "Medicopia Healthcare app designed by Divami",
             title: "Marketing",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissum quod dolore optio, facilis vitae voluptas saepe..",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex a saepe..",
+            tagline: "“Promote, Reach, Grow: Elevate Your Brand with Us.”",
+            message: `Get help promoting your business with our comprehensive marketing tools. Reach more customers through tailored marketing strategies and social media campaigns. Attend branding workshops to refine your brand identity and messaging. Grow your brand’s presence and recognition in the market, driving customer engagement and loyalty. Learn how to create compelling content and utilize digital marketing techniques to boost your visibility.`,
+            mobileMessage: `Get help promoting your business with our comprehensive marketing tools. Reach more customers through tailored marketing strategies and social media campaigns. Attend branding workshops to refine your brand identity and messaging. Grow your brand’s presence and recognition in the market, driving customer engagement and loyalty. Learn how to create compelling content and utilize digital marketing techniques to boost your visibility.`,
           },
           {
             linkName: "uxportfolio/airtel",
@@ -91,10 +86,9 @@ const Vision = () => {
             altName: "Telecom Mobile App UX UI-Airtel",
             ariaLabel: "Airtel Telecom app designed by Divami",
             title: "Mentoring",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe..",
+            tagline: "“Guiding Your Success.”",
+            message: `Get advice from experienced mentors through one-on-one sessions and group discussions. Our mentoring program connects you with industry experts who provide personalized guidance. Receive support tailored to your unique business challenges and goals. Benefit from the wisdom and experience of successful professionals dedicated to your growth. Engage in mentorship programs that offer practical advice, strategic insights, and motivational support.`,
+            mobileMessage: `Get advice from experienced mentors through one-on-one sessions and group discussions. Our mentoring program connects you with industry experts who provide personalized guidance. Receive support tailored to your unique business challenges and goals. Benefit from the wisdom and experience of successful professionals dedicated to your growth. Engage in mentorship programs that offer practical advice, strategic insights, and motivational support.`,
           },
           {
             linkName: "uxportfolio/viola",
@@ -103,10 +97,9 @@ const Vision = () => {
             altName: "Fintech Mobile App UX UI-Viola",
             ariaLabel: "Viola Fintech app designed by Divami",
             title: "Saving",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex as vitae voluptas saepe.",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe..",
+            tagline: "“Master Your Finances: Save, Optimize, Thrive.”",
+            message: ` Learn how to manage your finances effectively with our expert advice. Save money by optimizing your budget and cutting unnecessary expenses. Attend financial planning workshops that teach you how to invest wisely for long-term success. Ensure your financial health and stability with our comprehensive financial management resources. Get access to financial tools and templates that help you keep track of your spending and savings.`,
+            mobileMessage: ` Learn how to manage your finances effectively with our expert advice. Save money by optimizing your budget and cutting unnecessary expenses. Attend financial planning workshops that teach you how to invest wisely for long-term success. Ensure your financial health and stability with our comprehensive financial management resources. Get access to financial tools and templates that help you keep track of your spending and savings.`,
           },
           {
             linkName: "uxportfolio/shiksha",
@@ -115,10 +108,9 @@ const Vision = () => {
             altName: "Education Web App UX UI-Shiksha by HCL",
             ariaLabel: "Shiksha Education app designed by Divami",
             title: "GDP Growth",
-            message:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe..",
-            mobileMessage:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantium quod dolore optio, facilis vitae voluptas saepe.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae enim tenetur, sequi nemo dignissimos voluptatum quos, ex accusantvitae voluptas saepe..",
+            tagline: "“Empowering Women, Driving Growth.”",
+            message: ` By supporting women entrepreneurs, Dhiyodha helps boost the economy. Successful women-led businesses drive innovation and create jobs, contributing to economic development. Join our initiative to promote female entrepreneurship and foster a more diverse and robust business landscape. Empower women to be key players in economic growth and societal advancement. Celebrate the success stories of women entrepreneurs who are making a significant impact on the economy.`,
+            mobileMessage: ` By supporting women entrepreneurs, Dhiyodha helps boost the economy. Successful women-led businesses drive innovation and create jobs, contributing to economic development. Join our initiative to promote female entrepreneurship and foster a more diverse and robust business landscape. Empower women to be key players in economic growth and societal advancement. Celebrate the success stories of women entrepreneurs who are making a significant impact on the economy.`,
           },
         ],
       };
@@ -148,6 +140,8 @@ const Vision = () => {
         srcset: imagesData.imageDetails[position].webp,
       });
       $(".tailor-fit-title").html(imagesData.imageDetails[position].title);
+      setVerticalMessage(position);
+      $(".tailor-fit-tagline").html(imagesData.imageDetails[position].tagline);
       setVerticalMessage(position);
     }
 
@@ -294,10 +288,19 @@ const Vision = () => {
 
   return (
     <section className="diyodha-vision-area z-20">
+      <div className=" mb-20">
+        <img
+          className=" w-full"
+          src="/women_network_curve.png"
+          alt="womenNetwork"
+        />
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-xl sm:text2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-[#000]">Vision of Dhiyodha</h1>
+            <h1 className="text-xl sm:text2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-[#000]">
+              Vision of Dhiyodha
+            </h1>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -317,6 +320,9 @@ const Vision = () => {
                     <h1 className="section-title__text tailor-fit-title text-2xl font-bold mb-2">
                       Networking
                     </h1>
+                    <h2 className="section-tagline__text tailor-fit-tagline text-2xl font-bold mb-2">
+                      This is Tagline
+                    </h2>
                     <p className="section-title__descripion tailor-fit-description text-base">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Beatae enim tenetur, sequi nemo dignissimos voluptatum
@@ -463,6 +469,13 @@ const Vision = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className=" mt-24">
+        <img
+          className=" w-full"
+          src="/women_network_curve.png"
+          alt="womenNetwork"
+        />
       </div>
     </section>
   );

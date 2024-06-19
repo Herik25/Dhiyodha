@@ -4,8 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Register from "./components/register/Register.jsx";
-import Navbar from "./navbar/Navbar.jsx";
 import MobileWebForm from "./components/MobileWebForm/MobileWebForm.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
 
 const router = createBrowserRouter([
   {

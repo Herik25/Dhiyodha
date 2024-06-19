@@ -343,6 +343,17 @@
     -webkit-text-fill-color: transparent; */
 }
 
+.sub-title__block .section-tagline__text {
+    /* width: inherit; */
+    font-size: 20px;
+    line-height: 50px;
+    word-spacing: -4px;
+    color: #333;
+    /* background: -webkit-linear-gradient(#000, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
 #textanimie path:nth-child(1) {
     stroke-dasharray: 3160 !important;
 
