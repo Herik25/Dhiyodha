@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiRupee } from "react-icons/bi";
 import "./MobileForm.css";
 import { TiTick } from "react-icons/ti";
 import { useForm } from "react-hook-form";
+import { City, Country, State } from "country-state-city";
+import Select from "react-select";
 
 function MobileWebForm() {
   // Array representing the steps in the form
   const steps = [1, 2, 3, 4];
   // State to track the current step of the form
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   // State to track if the form is complete
   const [complete, setComplete] = useState(false);
   // Initialize useForm hook for form handling
@@ -20,15 +22,99 @@ function MobileWebForm() {
   // handling the gender selection with popup
   const [isGenderPopupVisible, setIsGenderPopupVisible] = useState(false);
   const [selectedGender, setSelectedGender] = useState("");
-  // console.log(selectedGender);
   // handling the business category selection with popup
-  const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] =
-    useState(false);
+  const [isBusinessCategoryPopupVisible, setIsBusinessCategoryPopupVisible] = useState(false);
   const [selectBusinessCategory, setSelectedBusinessCategory] = useState("");
-  // console.log(selectBusinessCategory);
+ 
   // handeling the company registration
+ 
   const [isBusinessRegistration, setIsBusinessRegistration] = useState(false);
   const [businessRegistration, setBusinessRegistration] = useState("");
+ 
+  // handling the country dropdown with select
+  const [selectCountry, setSelectCountry] = useState(null);
+  const [countryCode, setCountryCode] = useState(null);
+  const countries = Country.getAllCountries();
+  const countriesOptions = countries.map((country) => ({
+    value: country.name.toLowerCase(),
+    label: country.name,
+    countryCode: country.isoCode,
+  }));
+
+  const handleCountryChange = (country) => {
+    setSelectCountry(country.value);
+    setCountryCode(country.countryCode);
+  };
+
+  // handeling the state change with select
+
+  const [selectState, setSelectState] = useState(null);
+  const [stateCode, setStateCode] = useState(null);
+
+  const states = State.getAllStates();
+  const filteredStates = states.filter(
+    (state) => state.countryCode === countryCode
+  );
+  const stateOptions = filteredStates.map((state) => ({
+    value: state.name.toLowerCase(),
+    label: state.name,
+    stateCode: state.isoCode,
+  }));
+
+  const handleStateChange = (state) => {
+    setSelectState(state.value);
+    setStateCode(state.stateCode);
+  };
+
+  // handling the city dropdown with select
+  
+  const cities = City.getAllCities();
+
+  const [selectCity, setSelectCity] = useState(null);
+  const filteredCities = cities.filter(
+    (city) => city.countryCode === countryCode && city.stateCode === stateCode
+  );
+
+  const cityOptions = filteredCities.map((city) => ({
+    value: city.name.toLowerCase(),
+    label: city.name,
+  }));
+
+  const handleCityChange = (city) => {
+    setSelectCity(city.value);
+  }
+
+  // custom styles for select drop down
+ 
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      minHeight: "50px",
+      minWidth: "170px",
+      border: "none",
+      backgroundColor: "#E4E7FF",
+      boxShadow: "none",
+      "&:hover": {
+        borderColor: "#888",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      color: state.isSelected ? "white" : "black",
+      backgroundColor: state.isSelected ? "#6246EA" : "white",
+      "&:hover": {
+        backgroundColor: "#f2f2f2",
+      },
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: "#6246EA",
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "#6246EA",
+    }),
+  };
 
   // Function to handle the "Next" button click
   const handleNext = () => {
@@ -66,14 +152,15 @@ function MobileWebForm() {
 
   // Function to handle form submission
   const onSubmit = async (data) => {
+    console.log(data);
     // json object
     const userObject = {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
       dob: data.dob,
-      countryCode: "IN",
-      // mobileNo: "8799026842",
+      countryCode: countryCode,
+      // mobileNo: "0123456789",
       password: data.password,
       confirmPassword: data.confirmPassword,
       education: data.education,
@@ -89,13 +176,13 @@ function MobileWebForm() {
         officeEmail: data.officeEmail,
       },
       address: {
-        city: data.city,
-        state: data.state,
-        pinCode: data.pinCode,
+        city: selectCity,
+        state: selectState,
+        country: selectCountry,
       },
     };
 
-    console.log(userObject);
+    // console.log(userObject);
 
     if (currentStep === steps.length) {
       try {
@@ -167,18 +254,20 @@ function MobileWebForm() {
         {isBusinessRegistration && (
           <div className="popup-overlay">
             <div className="popup">
-              <div onClick={() => handleBusunessRegistration("SOLO_PROPRIETOR")}>
+              <div
+                onClick={() => handleBusunessRegistration("SOLO_PROPRIETOR")}
+              >
                 Solo Proprietor
               </div>
               <div onClick={() => handleBusunessRegistration("PARTNERSHIP")}>
                 Parternership
               </div>
-              <div onClick={() => handleBusunessRegistration("PRIVATE_LIMITED")}>
+              <div
+                onClick={() => handleBusunessRegistration("PRIVATE_LIMITED")}
+              >
                 Private Limited
               </div>
-              <div onClick={() => handleBusunessRegistration("NGO")}>
-                NGO
-              </div>
+              <div onClick={() => handleBusunessRegistration("NGO")}>NGO</div>
               <div onClick={() => handleBusunessRegistration("NON_REGISTERED")}>
                 Non Registered
               </div>
@@ -355,58 +444,45 @@ function MobileWebForm() {
                       </span>
                     )}
                   </div>
-                  <div className="flex justify-between gap-4">
-                    <div className="mt-3 flex flex-col text-base font-normal">
-                      <input
-                        type="text"
-                        name="city"
-                        id="city"
-                        {...register("city", {
-                          required: "City is required",
-                        })}
-                        placeholder="City"
-                        className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
+                  <div className="flex justify-between z-20 mt-2">
+                    <div className="mt-3">
+                      <Select
+                        options={countriesOptions}
+                        styles={customStyles}
+                        placeholder="Country"
+                        onChange={handleCountryChange}
                       />
-                      {errors.city && (
+                      {errors.country && (
                         <span className="text-[#ff3737] text-xs pl-1">
-                          {errors.city.message}
+                          {errors.country.message}
                         </span>
                       )}
                     </div>
-                    <div className="mt-3">
-                      <input
-                        type="text"
-                        name="pinCode"
-                        id="pinCode"
-                        maxLength={6}
-                        {...register("pinCode", {
-                          required: "pinCode is required",
-                        })}
-                        placeholder="Pin Code"
-                        className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
+                    <div className="mt-3 text-base font-normal">
+                      <Select
+                        options={stateOptions}
+                        styles={customStyles}
+                        placeholder="State"
+                        onChange={handleStateChange}
                       />
-                      {errors.pinCode && (
+                      {errors.state && (
                         <span className="text-[#ff3737] text-xs pl-1">
-                          {errors.pinCode.message}
+                          {errors.state.message}
                         </span>
                       )}
                     </div>
                   </div>
 
-                  <div className="mt-3 flex flex-col text-base font-normal">
-                    <input
-                      type="text"
-                      name="state"
-                      id="state"
-                      {...register("state", {
-                        required: "State is required",
-                      })}
-                      placeholder="State"
-                      className="p-3 py-3 mt-2 rounded-md w-full text-base font-normal outline-none border-none bg-[#E4E7FF] text-[#6246EA]"
+                  <div className="mt-5 flex flex-col text-base font-normal z-18">
+                    <Select
+                      options={cityOptions}
+                      styles={customStyles}
+                      placeholder="City"
+                      onChange={handleCityChange}
                     />
-                    {errors.state && (
+                    {errors.city && (
                       <span className="text-[#ff3737] text-xs pl-1">
-                        {errors.state.message}
+                        {errors.city.message}
                       </span>
                     )}
                   </div>
