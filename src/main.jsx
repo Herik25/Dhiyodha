@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Register from "./components/register/Register.jsx";
 import MobileWebForm from "./components/MobileWebForm/MobileWebForm.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
+import MobileTest from "./components/mobileTest/MobileTest.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
     path: "/mobile-web-form",
     element: <>
       <MobileWebForm />
+    </>,
+  },
+  {
+    path: "/mobile-test",
+    element: <>
+      <MobileTest />
     </>,
   },
 ]);
