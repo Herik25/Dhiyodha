@@ -11,32 +11,32 @@ function Testimonials() {
   const renderTestimonials = () => {
     const testimonials = [
       {
-        src: "https://1.bp.blogspot.com/-etLuQuGcvk4/X7KNwaY_jNI/AAAAAAAACQk/5IakDtRRKVo5vNbZLfhSsk10RTVdHmsjQCLcBGAsYHQ/w320-h309/indira%2Bgandhi%2Btransparent%2Bpng%2B11.png",
+        src: "testimonials/test1.png",
         delay: "0s",
         right: "right-[20%]",
       },
       {
-        src: "https://th.bing.com/th/id/OIP.yecByzFzfjR4auLzZtBySwHaFz?rs=1&pid=ImgDetMain",
+        src: "testimonials/test2.png",
         delay: "0.5s",
         right: "right-[80%]",
       },
       {
-        src: "https://www.lifology.com/wp-content/themes/lifology/assets/gcd/images/panel/Barkha.png?ver=1.5.2",
+        src: "testimonials/test3.png",
         delay: "1s",
         right: "right-[30%]",
       },
       {
-        src: "https://uploads-ssl.webflow.com/638aec50b9a23cec17b8c4d1/63c8efc8cbe2f68f8fec48ff_1588582389829-removebg-preview.png",
+        src: "testimonials/test4.png",
         delay: "1.5s",
         right: "right-[70%]",
       },
       {
-        src: "https://www.iconspng.com/uploads/priyanka-chopra-portrait.png",
+        src: "testimonials/test5.png",
         delay: "2s",
         right: "right-[10%]",
       },
       {
-        src: "https://www.csaspeakersindia.in/media/pictures/profile/6402.png",
+        src: "testimonials/test6.png",
         delay: "2.5s",
         right: "right-[45%]",
       },
@@ -70,32 +70,32 @@ function Testimonials() {
   const renderTestimonials2 = () => {
     const testimonials = [
       {
-        src: "https://1.bp.blogspot.com/-etLuQuGcvk4/X7KNwaY_jNI/AAAAAAAACQk/5IakDtRRKVo5vNbZLfhSsk10RTVdHmsjQCLcBGAsYHQ/w320-h309/indira%2Bgandhi%2Btransparent%2Bpng%2B11.png",
+        src: "testimonials/test1.png",
         delay: "0s",
         right: "left-[20%]",
       },
       {
-        src: "https://th.bing.com/th/id/OIP.yecByzFzfjR4auLzZtBySwHaFz?rs=1&pid=ImgDetMain",
+        src: "testimonials/test2.png",
         delay: "0.5s",
         right: "left-[80%]",
       },
       {
-        src: "https://www.lifology.com/wp-content/themes/lifology/assets/gcd/images/panel/Barkha.png?ver=1.5.2",
+        src: "testimonials/test3.png",
         delay: "1s",
         right: "left-[30%]",
       },
       {
-        src: "https://uploads-ssl.webflow.com/638aec50b9a23cec17b8c4d1/63c8efc8cbe2f68f8fec48ff_1588582389829-removebg-preview.png",
+        src: "testimonials/test4.png",
         delay: "1.5s",
         right: "left-[70%]",
       },
       {
-        src: "https://www.iconspng.com/uploads/priyanka-chopra-portrait.png",
+        src: "testimonials/test5.png",
         delay: "2s",
         right: "left-[10%]",
       },
       {
-        src: "https://www.csaspeakersindia.in/media/pictures/profile/6402.png",
+        src: "testimonials/test6.png",
         delay: "2.5s",
         right: "left-[45%]",
       },
@@ -118,7 +118,7 @@ function Testimonials() {
           />
         ) : (
           <img
-            className={`min-h-16 min-w-16 md:min-h-20 md:min-w-20 rounded-full border-[1px] border-[#ccc] absolute ${testimonial.right} `}
+            className={`h-16 w-16 md:h-20 md:w-20 rounded-full border-[1px] border-[#ccc] absolute ${testimonial.right}`}
             src={testimonial.src}
             alt={`pic${index + 1}`}
           />
@@ -153,7 +153,7 @@ function Testimonials() {
           <div className="flex items-center justify-center gap-1">
             <button className="bg-orange-gradient p-3 text-[10px] sm:text-xs md:text-sm lg:text-base text-[#fff] font-semibold rounded-full flex items-center justify-center gap-2 flex-1 min-w-[180px]">
               <IoCall size={16} />
-              +91-87990-26842
+              +91-99981-44468
             </button>
             <button className="bg-gradient-to-r from-purple to-blue p-3 text-[#fff] font-semibold text-[10px] sm:text-xs md:text-sm lg:text-base rounded-full flex items-center justify-center gap-2 flex-1 min-w-[180px]">
               <CiChat1 size={22} /> Chat Live Now!
@@ -176,7 +176,7 @@ function Testimonials() {
           !isMobile && "flex-col"
         } justify-between my-10 px-2 flex-1 max-w-full`}
       >
-        {renderTestimonials()}
+        {renderTestimonials2()}
       </div>
     </div>
   );

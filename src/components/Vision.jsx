@@ -288,21 +288,21 @@ const Vision = () => {
 
   return (
     <section className="diyodha-vision-area z-20">
-      <div className=" mb-20">
+      {/* <div className=" mb-20">
         <img
           className=" w-full"
           src="/women_network_curve.png"
           alt="womenNetwork"
         />
-      </div>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center">
+      </div> */}
+        <div className="flex items-center justify-center bg-gradient-to-r from-purple to-blue">
           <div className="text-center">
-            <h1 className="text-xl sm:text2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-[#000]">
+            <h1 className="text-xl sm:text2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center py-4 text-[#fff]">
               Vision of Dhiyodha
             </h1>
           </div>
         </div>
+      <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="col-span-12 md:col-span-8">
             <div className="home-tailer__block">
@@ -470,12 +470,17 @@ const Vision = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-24">
+      {/* <div className=" mt-24">
         <img
           className=" w-full"
           src="/women_network_curve.png"
           alt="womenNetwork"
         />
+      </div> */}
+      <div className="networkWave mt-20">
+        <section>
+          <div className="netWavey wave1"></div>
+        </section>
       </div>
     </section>
   );

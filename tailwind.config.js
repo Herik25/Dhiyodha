@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       poppins: "Poppins, Arial, sans-serif",
       manrope: "Manrope, sans-serif",
+      playWrite: "Playwrite GB S, sans-serif",
     },
     extend: {
       backgroundImage: {

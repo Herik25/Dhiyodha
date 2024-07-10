@@ -1,9 +1,9 @@
 /* //////////////////// diyodha-vision-area  //////////////////////////// */
 .diyodha-vision-area {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     padding-bottom: 80px;
     position: relative;
-    background-color: #fff;   
+    background-color: #fff;
 }
 
 .vision-main-block {
@@ -1238,5 +1238,40 @@
         margin-right: 40px;
         margin-top: 0px;
 
+    }
+}
+
+/* wave animation */
+
+.networkWave section {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.netWavey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: url("/women_network_wave.png");
+    background-size: 567px 150px;
+    background-repeat: repeat-x;
+}
+
+section .netWavey.wave1 {
+    animation: wavey 20s cubic-bezier(.36, .45, .63, .53) infinite
+}
+
+@keyframes wavey {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
     }
 }

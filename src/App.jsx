@@ -6,7 +6,6 @@ import Vision from "./components/Vision";
 import WhyDhiyodhha from "./components/WhyDhiyodhha";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import CurveyLine from "./components/CurveyLine";
 import AboutUs from "./components/AboutUs";
 import IgFeed from "./components/IgFeed";
 import Navbar from "./components/navbar/Navbar";
@@ -17,7 +16,6 @@ function App() {
       <Navbar />
       <Hero />
       <Test />
-      <CurveyLine />
       <Vision />
       <AboutUs />
       <WhyDhiyodhha />

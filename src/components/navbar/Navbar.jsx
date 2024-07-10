@@ -123,8 +123,8 @@ function Navbar() {
               alt="Logo"
             />
           </div>
-          {/* Desktop menu items */}
-          <div className=" flex px-3">
+          {/* Desktop menu items - TODO: change hidden to flex when to make it visible again */}
+          <div className=" px-3 hidden">
             {navLinks.map((item, index) => {
               const { path, name } = item;
               return (
@@ -182,9 +182,6 @@ function Navbar() {
               />
               <div className=" text-[#fff]">Download Right now</div>
             </div>
-            <Link className=" flex items-center" to="/mobile-web-form">
-              <CiMobile1 size={24} />
-            </Link>
           </div>
         </nav>
       )}

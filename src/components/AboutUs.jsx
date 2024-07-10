@@ -8,15 +8,15 @@ function AboutUs() {
     <div className=" h-screen w-full relative pt-20">
       <img
         className=" absolute right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
-        src="https://th.bing.com/th/id/OIP.hRfaHN0PZpqWIOBAWIAkQwHaHa?rs=1&pid=ImgDetMain"
-        alt="blob"
+        src="/lady2.png"
+        alt="ladyImg1"
       />
       <img
         className=" absolute w-[150px] md:w-[250px] xl:w-[350px] bottom-[10%] left-0 md:left-[12%]"
-        src="https://static.vecteezy.com/system/resources/previews/009/376/712/non_2x/abstract-yellow-blob-element-free-png.png"
-        alt="blob2"
+        src="/lady1.png"
+        alt="ladyImg2"
       />
-      <div className=" flex flex-col items-center justify-center z-10 h-full">
+      <div className=" flex flex-col items-center justify-center z-20 h-full">
         <div className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl translate-y-[-30px] md:translate-y-[-40px] lg:translate-y-[-50px] font-semibold">
           About Us
         </div>

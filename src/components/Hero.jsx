@@ -13,14 +13,14 @@ function Hero() {
   const initializeAnimations = () => {
     const imageAnimation = gsap.to(imageRef.current, {
       x: isMobile
-        ? 0
+        ? 6
         : window.innerWidth < 1200
         ? -150
         : window.innerWidth < 1600
-        ? -250
+        ? -180
         : -400,
-      y: 1050,
-      scale: 1.5,
+      y: isMobile ? 940 : window.innerWidth < 1600 ? 1100 : 1220,
+      scale: isMobile ? 0.6 : 1,
       scrollTrigger: {
         trigger: imageRef.current,
         start: "top",
@@ -93,11 +93,11 @@ function Hero() {
             <img
               className={`${
                 isMobile
-                  ? "w-[250px] md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[400px]"
+                  ? "w-[180px] md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[400px]"
                   : "md:h-[300px] md:w-[300px] lg:h-[450px] lg:w-[500px]"
               }`}
               ref={imageRef}
-              src={animationFinished ? "/namaste_2.png" : "/namaste_2.png"}
+              src={animationFinished ? "/namaste_2.png" : "/namaste_1.png"}
               alt="image"
             />
           </div>
@@ -111,8 +111,10 @@ function Hero() {
           ></div>
         </div>
         <div className="flex flex-col text-[#fff]">
-          <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] font-semibold mb-8">
-            Achieve with <br /> Dhiyodha.
+          <p className="text-[25px] sm:text-[35px] md:text-[45px] lg:text-[55px] font-semibold mb-8">
+            Women are the{" "}
+            <span className="bg-clip-text font-playWrite bg-orange-gradient ">creators</span> of
+            the world.
           </p>
           <p className="text-[15px] sm:text-[20px] md:[24px] lg:text-[26px] font-medium mb-10 max-w-[350px] sm:max-w-[450px] md:[600px] lg:max-w-[800px]">
             Empowering women to connect, learn, and thrive in a supportive
