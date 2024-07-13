@@ -97,7 +97,7 @@ function Hero() {
                   : "md:h-[300px] md:w-[300px] lg:h-[450px] lg:w-[500px]"
               }`}
               ref={imageRef}
-              src={animationFinished ? "/namaste_2.png" : "/namaste_1.png"}
+              src={animationFinished ? "/hero/namaste_2.png" : "/hero/namaste_1.png"}
               alt="image"
             />
           </div>

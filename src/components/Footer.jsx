@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import LogoWithText from "../assets/DhiyodhaLogoWithText.png";
 import useIsMobile from "../hooks/UseIsMobile";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const isMobile = useIsMobile();
@@ -16,19 +17,30 @@ function Footer() {
               <img width={180} src={LogoWithText} alt="Logo" />
             </div>
             <div className={` flex w-full justify-between`}>
-              <FaFacebook
-                size={28}
-                className=" text-[#395797] cursor-pointer"
-              />
-              <FaTwitter size={28} className=" text-[#07A9EA] cursor-pointer" />
-              <FaInstagram
-                size={28}
-                className=" text-[#E80C89] cursor-pointer"
-              />
-              <FaLinkedin
-                size={28}
-                className=" text-[#017CB7] cursor-pointer"
-              />
+              <Link to="https://www.facebook.com/dhiyodha">
+                <FaFacebook
+                  size={28}
+                  className=" text-[#395797] cursor-pointer"
+                />
+              </Link>
+              <Link to="https://x.com/dhiyodha23">
+                <FaTwitter
+                  size={28}
+                  className=" text-[#07A9EA] cursor-pointer"
+                />
+              </Link>
+              <Link to="https://www.instagram.com/dhiyodha_platform">
+                <FaInstagram
+                  size={28}
+                  className=" text-[#E80C89] cursor-pointer"
+                />
+              </Link>
+              <Link to="https://www.linkedin.com/company/dhiyodhaplatform.com">
+                <FaLinkedin
+                  size={28}
+                  className=" text-[#017CB7] cursor-pointer"
+                />
+              </Link>
             </div>
           </div>
           <div className=" flex flex-col items-start gap-2 font-poppins font-medium text-[#444]">
@@ -102,26 +114,45 @@ function Footer() {
   ) : (
     <div className="flex flex-col">
       <div>
-        <img className=" w-full" src="/group_of_women.png" alt="groupOfWomen" />
+        <img
+          className=" w-full"
+          src="/footer/group_of_women.png"
+          alt="groupOfWomen"
+        />
       </div>
-      <div className=" pt-10 px-4 sm:px-10 md:px-10 lg:px-30 pb-20 flex justify-between items-center">
+      <div className=" pt-10 px-4 sm:px-10 md:px-10 lg:px-40 pb-20 flex justify-between items-center">
         <div className=" flex flex-col items-center justify-center gap-5">
           <div className=" ">
             <img width={180} src={LogoWithText} alt="Logo" />
           </div>
           <div className={` flex w-full justify-between`}>
-            <FaFacebook size={28} className=" text-[#395797] cursor-pointer" />
-            <FaTwitter size={28} className=" text-[#07A9EA] cursor-pointer" />
-            <FaInstagram size={28} className=" text-[#E80C89] cursor-pointer" />
-            <FaLinkedin size={28} className=" text-[#017CB7] cursor-pointer" />
+            <Link to="https://www.facebook.com/dhiyodha">
+              <FaFacebook
+                size={28}
+                className=" text-[#395797] cursor-pointer"
+              />
+            </Link>
+            <Link to="https://x.com/dhiyodha23">
+              <FaTwitter size={28} className=" text-[#07A9EA] cursor-pointer" />
+            </Link>
+            <Link to="https://www.instagram.com/dhiyodha_platform">
+              <FaInstagram
+                size={28}
+                className=" text-[#E80C89] cursor-pointer"
+              />
+            </Link>
+            <Link to="https://www.linkedin.com/company/dhiyodhaplatform.com">
+              <FaLinkedin
+                size={28}
+                className=" text-[#017CB7] cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
         <div className=" flex flex-col items-start gap-2 font-poppins font-medium text-[#444]">
           <div className=" hover:text-blue cursor-pointer">Activities</div>
           <div className=" hover:text-blue cursor-pointer">Training</div>
-          <div className=" hover:text-blue cursor-pointer">
-            Media
-          </div>
+          <div className=" hover:text-blue cursor-pointer">Media</div>
         </div>
         <div className=" flex flex-col items-start gap-2 font-poppins font-medium text-[#444]">
           <div className=" hover:text-blue cursor-pointer">contact Us</div>

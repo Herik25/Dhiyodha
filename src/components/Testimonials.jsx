@@ -153,7 +153,7 @@ function Testimonials() {
           <div className="flex items-center justify-center gap-1">
             <button className="bg-orange-gradient p-3 text-[10px] sm:text-xs md:text-sm lg:text-base text-[#fff] font-semibold rounded-full flex items-center justify-center gap-2 flex-1 min-w-[180px]">
               <IoCall size={16} />
-              +91-99981-44468
+              +91 99981-44468
             </button>
             <button className="bg-gradient-to-r from-purple to-blue p-3 text-[#fff] font-semibold text-[10px] sm:text-xs md:text-sm lg:text-base rounded-full flex items-center justify-center gap-2 flex-1 min-w-[180px]">
               <CiChat1 size={22} /> Chat Live Now!

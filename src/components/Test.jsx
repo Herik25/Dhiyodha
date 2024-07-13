@@ -10,7 +10,7 @@ function Test() {
         Welcome to Dhiyodha
       </h1>
       <video autoPlay muted loop playsInline width="100%">
-        <source src="/backgroundVideo.mp4" type="video/mp4" >
+        <source src="/videos/backgroundVideo.mp4" type="video/mp4" >
         </source>
       </video>
     </div>

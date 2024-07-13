@@ -1,6 +1,18 @@
 import gsap from "gsap";
 import React, { useEffect } from "react";
 import useIsMobile from "../hooks/UseIsMobile";
+import { CgChevronLeft } from "react-icons/cg";
+import { IoChevronBackCircleOutline } from "react-icons/io5";
+import { BsTriangle } from "react-icons/bs";
+import { GoTriangleRight } from "react-icons/go";
+import {
+  TbCircleLetterA,
+  TbCircleLetterE,
+  TbCircleLetterN,
+  TbCircleLetterO,
+  TbCircleLetterR,
+  TbCircleLetterW,
+} from "react-icons/tb";
 
 function WhyDhiyodhha() {
   const isMobile = useIsMobile();
@@ -70,7 +82,7 @@ function WhyDhiyodhha() {
           </div>
         </section>
         <section className=" min-w-[250px] flex flex-col justify-center items-center m-5 mt-10">
-          <div className=" bg-[#fff] w-full h-full py-[40px] rounded-[50px] flex items-center justify-between px-10">
+          <div className=" bg-[#fff] w-full h-full py-[20px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col gap-5 text-center ">
               <div className="text-[32px] font-bold text-[#444]">Vision</div>
               <div className=" flex items-center justify-center">
@@ -80,8 +92,51 @@ function WhyDhiyodhha() {
                   alt="visionImg"
                 />
               </div>
-              <div className=" text-[16px] font-semibold text-[#444]">
-                {content[0].description}
+              <div className=" grid grid-cols-1 w-full justify-items-center font-poppins">
+                <ul>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterW className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Warrior like
+                  </li>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Enthusiastic
+                  </li>
+
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterA className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Active
+                  </li>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterR className=" text-[#F36713] text-xl" /> -
+                    Responsible
+                  </li>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-xl" /> -
+                    Encouraging
+                  </li>
+
+                  <li className=" flex items-center text-base p-1">
+                    {" "}
+                    <TbCircleLetterO className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Open hearted
+                  </li>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterN className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Nurturing
+                  </li>
+                  <li className=" flex items-center text-lg p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-2xl pr-1" />{" "}
+                    - Expressive
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -89,7 +144,7 @@ function WhyDhiyodhha() {
         <section className=" min-w-[250px] flex flex-col justify-center items-center m-5 mt-10">
           <div className=" bg-[#fff] w-full h-full py-[40px] rounded-[50px] flex items-center justify-between px-10">
             <div className=" flex flex-col gap-5 text-center ">
-              <div className="text-[32px] font-bold text-[#444]">Goal</div>
+              <div className="text-[32px] font-bold text-[#444]">Value</div>
               <div className=" flex items-center justify-center">
                 <img
                   className="w-[120px] h-[180px] "
@@ -97,8 +152,52 @@ function WhyDhiyodhha() {
                   alt="Goal"
                 />
               </div>
-              <div className=" text-[16px] font-semibold text-[#444]">
-                {content[0].description}
+              <div className="flex items-center justify-around">
+                <div className=" grid grid-cols-1 w-full justify-items-center font-poppins">
+                  <ul>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Networking
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Learning
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Earning
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Marketing
+                    </li>
+
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Identification
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Mentoring
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      Saving
+                    </li>
+                    <li className=" flex items-center text-lg">
+                      {" "}
+                      <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                      GDP Growth
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -149,10 +248,53 @@ function WhyDhiyodhha() {
               Vision
             </div>
             <div className="flex items-center justify-around  py-8">
-              <div className=" flex flex-col max-w-[50%] ">
-                <div className=" text-[18px] font-semibold">
-                  {content[0].description}
-                </div>
+              <div className=" grid md:grid-cols-[3fr,3fr,3fr] w-full justify-items-center font-poppins">
+                <ul>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterW className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Warrior like
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Enthusiastic
+                  </li>
+                </ul>
+                <ul>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterA className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Active
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterR className=" text-[#F36713] text-4xl" /> -
+                    Responsible
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-4xl" /> -
+                    Encouraging
+                  </li>
+                </ul>
+                <ul>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterO className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Open hearted
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterN className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Nurturing
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <TbCircleLetterE className=" text-[#F36713] text-4xl pr-1" />{" "}
+                    - Expressive
+                  </li>
+                </ul>
               </div>
               <div className=" flex items-center justify-center">
                 <img
@@ -162,7 +304,7 @@ function WhyDhiyodhha() {
                 />
               </div>
             </div>
-            <div className=" text-center pb-10 text-2xl font-semibold font-playWrite">
+            {/* <div className=" text-center pb-10 text-2xl font-semibold font-playWrite">
               <span className="mr-5">W</span>
               <span className="mr-10">E</span>
               <span className="mr-5">A</span>
@@ -171,21 +313,62 @@ function WhyDhiyodhha() {
               <span className="mr-5">O</span>
               <span className="mr-5">N</span>
               <span>E</span>
-            </div>
+            </div> */}
           </div>
         </section>
         <section className=" w-[60vw] flex justify-center items-center m-20">
           <div className=" bg-[#fff] w-full h-full rounded-[50px] px-10">
             <div className=" text-center pt-10 text-4xl font-semibold font-poppins">
-              Goal
+              Values
             </div>
             <div className="flex items-center justify-around  py-8">
-              <div className=" flex flex-col max-w-[50%] ">
-                <div className=" text-[18px] font-semibold">
-                  {content[0].description}
-                </div>
+              <div className=" grid md:grid-cols-[5fr,5fr] w-full justify-items-center font-poppins">
+                <ul>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Networking
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Learning
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Earning
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Marketing
+                  </li>
+                </ul>
+                <ul>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Identification
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Mentoring
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" />{" "}
+                    Saving
+                  </li>
+                  <li className=" flex items-center text-2xl p-1">
+                    {" "}
+                    <GoTriangleRight className=" text-[#F36713] text-3xl" /> GDP
+                    Growth
+                  </li>
+                </ul>
               </div>
-              <div className=" flex items-center justify-center">
+              <div className=" flex items-center justify-center min-w-[200px]">
                 <img
                   className=" h-[200px] w-[86.97px] "
                   src="/Goal.png"
@@ -193,7 +376,7 @@ function WhyDhiyodhha() {
                 />
               </div>
             </div>
-            <div className=" text-center pb-10 text-2xl font-semibold font-playWrite">
+            {/* <div className=" text-center pb-10 text-2xl font-semibold font-playWrite">
               <span className="mr-5">W</span>
               <span className="mr-10">E</span>
               <span className="mr-5">A</span>
@@ -202,7 +385,7 @@ function WhyDhiyodhha() {
               <span className="mr-5">O</span>
               <span className="mr-5">N</span>
               <span>E</span>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

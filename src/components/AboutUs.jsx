@@ -8,12 +8,12 @@ function AboutUs() {
     <div className=" h-screen w-full relative pt-20">
       <img
         className=" absolute right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
-        src="/lady2.png"
+        src="aboutUs/lady2.png"
         alt="ladyImg1"
       />
       <img
         className=" absolute w-[150px] md:w-[250px] xl:w-[350px] bottom-[10%] left-0 md:left-[12%]"
-        src="/lady1.png"
+        src="/aboutUs/lady1.png"
         alt="ladyImg2"
       />
       <div className=" flex flex-col items-center justify-center z-20 h-full">

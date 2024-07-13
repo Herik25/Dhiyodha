@@ -12,8 +12,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 55px;
-  background: url(https://creative-ishi.myshopify.com/cdn/shop/files/wave-pattern_copy_1.png?v=1680610084);
+  height: 60px;
+  background: url("/hero/white_wave_1.png");
   /* background-size: 600px 80px; */
   background-repeat: repeat-x;
 }
