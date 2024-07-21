@@ -7,12 +7,12 @@ function AboutUs() {
   return (
     <div className=" h-screen w-full relative pt-20">
       <img
-        className=" absolute right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
+        className=" absolute z-10 right-0 md:right-[15%] w-[150px] md:w-[250px] xl:w-[300px]"
         src="aboutUs/lady2.png"
         alt="ladyImg1"
       />
       <img
-        className=" absolute w-[150px] md:w-[250px] xl:w-[350px] bottom-[10%] left-0 md:left-[12%]"
+        className=" absolute z-10 w-[150px] md:w-[250px] xl:w-[350px] bottom-[10%] left-0 md:left-[12%]"
         src="/aboutUs/lady1.png"
         alt="ladyImg2"
       />
@@ -20,7 +20,7 @@ function AboutUs() {
         <div className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl translate-y-[-30px] md:translate-y-[-40px] lg:translate-y-[-50px] font-semibold">
           About Us
         </div>
-        <p className=" max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[500px] text-sm sm:text-base md:text-lg lg:text-xl mb-4 md:mb-10 text-center">
+        <p className="z-20 max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[500px] text-sm sm:text-base md:text-lg lg:text-xl mb-4 md:mb-10 text-center">
           Today's woman is intelligent and versatile. From home to the border,
           from land to sky, from office cleaning to company establishment, women
           are managing their personal and professional lives exceptionally well.

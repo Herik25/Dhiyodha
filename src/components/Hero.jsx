@@ -10,6 +10,8 @@ function Hero() {
   const boxRef = useRef(null);
   const isMobile = useIsMobile();
 
+  // 1900 * 1200
+
   const initializeAnimations = () => {
     const imageAnimation = gsap.to(imageRef.current, {
       x: isMobile
